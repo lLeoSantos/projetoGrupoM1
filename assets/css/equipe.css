@@ -26,7 +26,6 @@ body{
 
 .equipe-img img{
     width: 100%;
-    filter: grayscale(100%);
 
 }
 
@@ -110,4 +109,48 @@ body{
     display: flex;
     margin-top: 100%;
 }
+
+.modal-container {
+    background: rgba(0, 0, 0, 0.2);
+    
+    width: 100%;
+    height: 100vh;
+    
+    position: fixed;
+    left: 0;
+    top: 0;
+    
+    display: grid;
+    place-items: center;
+    
+    opacity: 0;
+    pointer-events: none;
+    
+    transition: opacity 0.15s;
+  }
+  
+  .modal {
+    background: #fff;
+    
+    width: 0;
+    height: 0;
+    
+    padding: 15px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px 0 #00000070;
+  
+    overflow: hidden;
+    
+    transition: width 0.15s, height 0.15s;
+  }
+  
+  .modal-show  .modal {
+    width: 350px;
+    height: 250px;
+  }
+  
+  .modal-show {
+    opacity: 1;
+    pointer-events: auto;
+  }
 
