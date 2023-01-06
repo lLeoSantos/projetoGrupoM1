@@ -77,25 +77,17 @@ h1 {
     border: 1px solid #53f289;
     width: 20rem;
     height: 4rem;
+    transition: 1s;
 }
 
 #enviar button:hover {
-    animation-name: mudarCor;
-    animation-duration: 1s;
-    animation-fill-mode: both;
+    background-color: #28b53d;
 }
 
-@keyframes mudarCor {
-    from {
-        background-color: #10731f;
-    }
-    to {
-        background-color: #28b53d;
-    }
-}
 
 #enviar button:active {
     background: #0b3d13!important;
+    transition: none;
 }
 
 /* Para talvez incluir na ROOT */
