@@ -1,8 +1,14 @@
 /* Configurações pagina 1 */
+*{
+    box-sizing: border-box;
+}
 
 @import url('https://fonts.googleapis.com/css?family=Inconsolata:500');
 
-html {font-size: 100%;} /*16px*/
+html, body {font-size: 100%;
+width: 100% !important;
+height: 100% !important;
+}
 
 body {
   background: #0B1226;
@@ -27,15 +33,14 @@ h1, h2, h3, h4, h5 {
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 100vw; /*tamanho da largula de forma responsiva*/
-    height: 100vh; 
+    width: 100%; /*tamanho da largula de forma responsiva*/
+    height: 100%; 
 }
 
 .funcionarios{
     display: block;
     width: 40%;
     height: 35%;
-    max-width: 50%;
     justify-items: center;
     justify-content: center;
     margin-left: 29%;
@@ -53,11 +58,11 @@ h1, h2, h3, h4, h5 {
     transform: scale(1.1);
     border-radius: 4rem; 
     box-shadow:
-        0 0 1rem #05F258,
-        inset 0 0 1rem #05F258,
-        0 0 2rem #05F258,
-        inset 0 0 1rem #05F258;        
-    }    
+        0 0 3rem #115086,
+        inset 0 0 2rem #115086,
+        0 0 4rem #115086,
+        inset 0 0 2rem #115086        
+}    
 
 
 #quemSomos{
@@ -67,14 +72,13 @@ h1, h2, h3, h4, h5 {
     justify-content: center;
     border: 5px solid #115086;
     margin-left: 10%;
+    margin-right: 10%;
     margin-top: 5%;
     margin-bottom: 1%;
     border-radius: 28px;
 }
 
 .paragrafoQuem{
-    justify-content: center;
-    justify-items: center;
     text-align: left;
     color: #05F258;
     margin-left: 1%;
