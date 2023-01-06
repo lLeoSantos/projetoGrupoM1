@@ -26,7 +26,7 @@ ul{
 /* Definições da HEADER */
 #headerContainer{
     display: flex;
-    width: 100vw;
+    width: 100%;
     background-color: gray;
     justify-content: space-between;
     align-items: center;
@@ -76,8 +76,9 @@ li{
     'opsz' 48
 }
 
+/* Definições do FOOTER */
 #footerContainer{
-     display: flex;
+    display: flex;
     background-color: grey;
     justify-content: center;
     margin-top: auto;

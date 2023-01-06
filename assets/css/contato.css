@@ -1,0 +1,118 @@
+/* Definições da página */
+p, label, input {
+    font-size: 1.5rem;
+    font-family: monospace;
+    color: #10731f;
+    text-shadow: 1px 1px 1px #f2f2f2;
+}
+
+body {
+    background-color: #0b1226;
+}
+/* Título da página */
+h1 {
+    font-size: 3rem;
+    margin-top: 1rem;
+    font-family: monospace;
+    color: #10731f;
+    text-shadow: 1px 1px 1px #f2f2f2;
+}
+
+/* Conteúdo da página */
+#conteudo {
+    flex: 1;
+    display: inherit;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Display do Formulário - Como o formulário será mostrado */
+#form form {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 3rem;
+    background: #296ca6;
+    border-radius: 3rem;
+    margin: 1rem;
+}
+
+/* Como será mostrado cada campo do formulário */
+.containerDoCampo {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    flex-basis: 50%;
+    margin: 1rem 0;
+
+}
+
+.containerDoCampo label {
+    margin: 0.3rem;
+}
+
+.containerDoCampo input {
+    width: 60%;
+    height: 2.5rem;
+}
+
+.containerDoCampo textarea {
+    width: 80%;
+    height: 10rem;
+}
+#telefone {
+    text-align: center;
+}
+
+#enviar {
+    flex-basis: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+#enviar button {
+    color: #53f289;
+    background: #10731f;
+    border: 1px solid #53f289;
+    width: 20rem;
+    height: 4rem;
+}
+
+#enviar button:hover {
+    animation-name: mudarCor;
+    animation-duration: 1s;
+    animation-fill-mode: both;
+}
+
+@keyframes mudarCor {
+    from {
+        background-color: #10731f;
+    }
+    to {
+        background-color: #28b53d;
+    }
+}
+
+#enviar button:active {
+    background: #0b3d13!important;
+}
+
+/* Para talvez incluir na ROOT */
+#headerContainer {
+    background-color: #0d0d0d!important;
+}
+
+#menu li {
+    color: #53f289;
+    text-shadow: 2px 2px 5px #f2f2f2;
+}
+
+#footerContainer {
+    background-color: #0d0d0d!important;
+}
+
+#footerP {
+    color: #53f289;
+    text-shadow: none;
+}
