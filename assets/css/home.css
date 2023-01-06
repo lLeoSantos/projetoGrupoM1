@@ -1,7 +1,77 @@
 
 /* Meio da pagina */
 #meio{
-    width: 100vw;
-    height: 90vh;
-    background: blue;
+    width: 100%;
+    height: 100%;
+    /* background: blue; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+/* Config barra de pesquisa */
+#busca{
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+}
+#pesquisa{
+    /* position: absolute; */
+    left: 0;
+    height: 3vh;
+    width: 17vw;
+    margin: 2.2rem;
+    border-radius: 23px;
+    background:#D9D9D9;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.5%;
+}
+#pesquisa input{
+    width: 69%;
+}
+#btPesquisa{
+    width: 29%;
+}
+#pesquisa input, #btPesquisa{
+    background: none;
+    border: none;
+    outline: none;
+}
+#pesquisa:hover{
+    border:#000000 solid 2px;
+    transition: 0.2s;
+}
+#btPesquisa:hover{
+    cursor: pointer;
+}
+
+/* Config carrossel */
+#carrossel{
+    margin-top: 2rem;
+    border-radius: 50px;
+    width: 80vw;
+    height: 40vh;
+    background: #D9D9D9;
+}
+#carrossel:hover{
+    border:#000000 solid 2px;
+    transition: all 0.1s ease-in;
+}
+/* config loja */
+
+.loja{
+    width: 70vw;
+    max-width: 980px;
+    margin: 15px auto;
+
+    display: flex;
+    justify-content: space-between;
+}
+.itensLoja{
+    width: 150px;
+    margin: 5px;
+    /* height: 200px; */
 }
