@@ -4,13 +4,13 @@
 }
 html{
     /* Fonte equivale a 10px */
-    font-size: 65.5%;
+    font-size: 62.5%;
 }
 body{
     width: 100vw;
-    height: 100vh;
     display: flex;
     flex-direction: column;
+    box-sizing: border-box;
 }
 
 img{
@@ -64,7 +64,7 @@ li{
 /* Icone do carrinho de compras */
 #carrinho {
     margin: 0.5rem;
-    margin-right: 1.6vw;
+    margin-right: 1.6rem;
 
 }
 
@@ -82,7 +82,7 @@ li{
     background-color: grey;
     justify-content: center;
     margin-top: auto;
-    box-sizing: border-box; 
+    width: 100vw;
 }
 
 #footerP{
