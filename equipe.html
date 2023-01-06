@@ -41,91 +41,94 @@
         </div> <!-- Fechar headerContainer -->
     </header> 
 
+
+    <!-- abre div "pai" -->
     <div class="containerEquipe">
+        <!-- abre section responsavel por alinhar tudo em column -->
         <section class="equipe">
+
             <h1 class="equipe-titulo">Equipe de desenvolvimento</h1>
+            <!-- abre div responsável pelo fundo transparente onde fica o modal -->
             <div class="modal-container">
+                <!-- Abre div responsável pelo conteudo dentro do modal-->
                 <div class="modal">
+                    <!-- Imagem dentro do modal -->
                     <section class="equipe-img">
                         <img src="assets/img/joao.jpeg" alt="">
                     </section>
                     <div>
+                        João Vitor
+                    </div>
+                    <div>
                         22 anos | Limeira - SP
                     </div>
+                    <div>
+                        <a href="">Linkedin</a> | <a href="">Github</a>
+                    </div>
                 </div>
+                <!-- fecha div responsável pelo conteudo dentro do modal-->
             </div>
-            <ul class="equipe-lista">
-                <li>
-                    <button class= "open-modal-button" href=".abrir-modal">
+            <!-- fecha div responsável pelo fundo transparente onde fica o modal -->
+            
+            <!-- Abre div para organizar imagens-->
+            <div class="equipe-alinhar">
+                
+                <!-- chama função -->
+                <div  class= "open-modal-button">
+                    <button  class="img-topo" href=".abrir-modal">
                         <section class="equipe-img">
                             <img src="assets/img/joao.jpeg" alt="">
                         </section>
                     </button>
-                </li>
-                <li>
-                    <a class="equipe-link" href="#segundo">
-                        <section class="equipe-img">
-                            <img src="assets/img/joao.jpeg" alt="">
-                        </section>
-                    </a>
-                </li>
-                <li>
-                    <a class="equipe-link1" href="#terceiro">
-                        <section class="equipe-img">
-                            <img src="assets/img/joao.jpeg" alt="">
-                        </section>    
-                    </a>
-                </li>
-                <li>
-                    <a class="equipe-link" href="#quarto">
-                        <section class="equipe-img">
-                            <img src="assets/img/joao.jpeg" alt="">
-                        </section>
-                    </a>
-                </li>
-            </ul>
-            <div class="descricao" id="primeiro">
-                <p class="equipe-nome" id="primeiro">Joao</p>
-                <p class="equipe-descricao">
-                     dolor sit amet consecteturLorem ipsum dolor sit amet consecteturLorem 
-                    Lorem ipsum dolor sit amet consectetur
-                </p>
-            </div>
-            <div class="descricao" id="segundo">
-                <p class="equipe-nome">Léo</p>
-                <p class="equipe-descricao">
-                    Lorem ipsum dolor sit ipsum dolor sit amet consecteturLorem 
-                    Lorem ipsum dolor sit amet consectetur
-                </p>
-            </div>
-            <div class="descricao" id="terceiro">
-                <p class="equipe-nome">Jhonny</p>
-                <p class="equipe-descricao">
-                    Lorem ipsum dolor sit amet consecteturLorem ipsum dolor sit amet consecteturLorem 
-                    Lorem ipsum dolor sit amet consectetur
-                </p>
-            </div>
-            <div class="descricao" id="quarto">
-                <p class="equipe-nome">Thiago</p>
-                <p class="equipe-descricao">
-                    Lorem ipsum dolor sit amet consecteturLorem ipsum dolor sit amet consecteturLorem 
-                    Lorem ipsum dolor 
-                </p>
-            </div>
-        </section>
-    </div>
+                </div>
 
-<footer>
-    <div id="footerContainer">
+
+                <div  class= "open-modal-button">
+                    <button  class="img-abaixo" href=".abrir-modal2">
+                        <section class="equipe-img">
+                            <img src="assets/img/joao.jpeg" alt="">
+                        </section>
+                    </button>
+                </div>
+
+
+                <div  class= "open-modal-button">
+                    <button  class="img-topo" href=".abrir-modal3">
+                        <section class="equipe-img">
+                            <img src="assets/img/joao.jpeg" alt="">
+                        </section>
+                    </button>
+                </div>
+
+
+                <div  class= "open-modal-button">
+                    <button  class="img-abaixo" href=".abrir-modal4">
+                        <section class="equipe-img">
+                            <img src="assets/img/joao.jpeg" alt="">
+                        </section>
+                    </button>
+                </div>
+
+
+            </div>
+            
+
+        </section>
+        <!-- fecha section responsavel por alinhar tudo em column -->
+    </div>
+    <!-- fecha div "pai" -->
+
+    <footer>
+        <div id="footerContainer">
         <div class="logo">
             <img src="assets/img/Logo.png" alt="Game Show Logo">
         </div>
-       <p id="footerP">© 2023, Game Show, Inc. Todos os direitos reservados. Game Show, o logotipo da Game Show,  
-        são marcas comerciais ou registradas da Game Show, Inc. nos do Brasil e em outros lugares. Outras marcas e 
-        nomes de produtos são marcas registradas de seus respectivos donos. Transações para além da América Latina 
-        são realizadas através da Game Show International, S.à r.l.</p>
-    </div>
-</footer>
+            <p id="footerP">© 2023, Game Show, Inc. Todos os direitos reservados. Game Show, o logotipo da Game Show,  
+            são marcas comerciais ou registradas da Game Show, Inc. nos do Brasil e em outros lugares. Outras marcas e 
+            nomes de produtos são marcas registradas de seus respectivos donos. Transações para além da América Latina 
+            são realizadas através da Game Show International, S.à r.l.</p>
+        </div>
+    </footer>
 
 <script src="assets/js/equipe.js"></script>
 </body>
