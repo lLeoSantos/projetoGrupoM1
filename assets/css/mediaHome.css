@@ -1,0 +1,45 @@
+@media (max-width: 710px) {
+    #containerLoja{
+        width: 60%;
+    }
+}
+@media (max-width: 673px) {
+    html{
+        font-size: 50%;
+    }
+}
+@media (max-width: 550px) {
+    html{
+        font-size: 40%;
+    }
+    #carrossel{
+        min-height: 150px;
+    }
+}
+@media (max-width: 430px) {
+    html{
+        font-size: 35%;
+    }
+    .itensLoja{
+        width: 70%;
+    }
+    #pesquisa input{
+        font-size: 1.2rem;
+    }
+}
+@media (max-width: 380px) {
+    html{
+        font-size: 30%;
+    }
+    #pesquisa input{
+        font-size: 1.2rem;
+    }
+    .itensLoja{
+        width: 60%;
+    }
+}
+@media (max-width: 330px) {
+    html{
+        font-size: 25%;
+    }
+}
