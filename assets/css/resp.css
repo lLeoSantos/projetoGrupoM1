@@ -1,0 +1,96 @@
+/*página destinada a responsividade da parte de "Nossa Equipe*/
+
+@media  (max-width: 800px){
+
+    .equipe-alinhar{
+        border: solid 3px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .equipe-img{
+        width: 90px;
+        height: 90px;
+    
+        border-radius: 50%;
+        overflow: hidden;
+        display: flex;
+    }
+
+    .img-abaixo{
+        display: flex;
+        margin-top: 10%;
+      }
+
+      .img-topo{
+        margin-top: 10%;
+      }
+
+      
+
+
+}
+
+@media  (max-width: 425px) {
+    #menu ul{
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+        font-size: 15px;
+        padding: 5px;
+    }
+    
+}
+
+@media  (max-width: 383px) {
+  
+    .logo{
+        border: 3px solid;
+    }
+    #headerContainer{
+        border: 3px solid;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+    }
+    
+}
+
+@media  (max-width: 332px) {
+    
+    #footerContainer{
+        border: 3px solid;
+        
+    }
+    .equipe-alinhar{
+        width: 40%;
+    }
+    .equipe{
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+    }
+    footer .logo{
+        display: none;
+        
+    }
+    #footerP{
+        width: 100%;
+    }
+    footer{
+        width: 100%;
+    }
+    #headerContainer{
+        border: 3px solid;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        width: 70%;
+    }
+    header{ 
+        display: flex;
+        justify-content: center;
+    }
+}

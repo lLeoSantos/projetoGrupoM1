@@ -112,34 +112,4 @@ button{
     border: transparent;
 }
 
-@media  (max-width: 800px){
-
-    .equipe-alinhar{
-        border: solid 3px;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
-    .equipe-img{
-        width: 90px;
-        height: 90px;
-    
-        border-radius: 50%;
-        overflow: hidden;
-        display: flex;
-    }
-
-    .img-abaixo{
-        display: flex;
-        margin-top: 10%;
-      }
-
-      .img-topo{
-        margin-top: 10%;
-      }
-
-      
-
-
-}
     
