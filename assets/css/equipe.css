@@ -8,7 +8,7 @@
     justify-content: center;
     align-items: center;
 
-
+    border: 3px solid red;
     background-size: 100%;
     background-repeat: no-repeat;
     background-position: fixed;
@@ -18,7 +18,7 @@
 .equipe-img{
     width: 140px;
     height: 140px;
-
+    border: 3px solid;
     border-radius: 50%;
     overflow: hidden;
     display: flex;
@@ -37,6 +37,7 @@
 }
 
 .equipe-alinhar{
+  border: 3px solid red;
     display: flex;
     justify-content: space-around;
     background-image: url("../img/linhas.png");
@@ -46,7 +47,7 @@
 }
 
 .equipe{
-
+  border: solid 3px red;
   width: 70%;
 }
 
@@ -89,19 +90,70 @@
   }
   
   .modal {
-    background: #fff;
-    width: 0;
-    height: 0;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      position: fixed;
+      width: 35%;
+      height: 40%;
+      left: 30%;
+      top: 50vh;
+      background-color: #296CA6;
+      transform: translateY(-25%);
+      padding: 1rem;
+      box-shadow: 4px 4px 4px #0002;
+      border-radius: 5px;
+      opacity: 0;
+      pointer-events: none;
+  }
+
+  .modal.visivel{
+    opacity: 1;
+    pointer-events: initial;
+    transform: translateY(-50%);
+  }
+
+
+  #mascara{
+    position: fixed;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    background-color: black;
+    opacity: 0;
+    pointer-events: none;
+  }
+
+  .modal.visivel ~ #mascara {
+    opacity: 1;
+    pointer-events: initial;
+  }
+
+  .modal > header {
     display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 15px;
-    border-radius: 5px;
-    box-shadow: 0 0 10px 0 #00000070;
-  
-    overflow: hidden;
+    justify-content: space-between;
+    border-bottom: 1px solid #0001;
+  }
+  .modal>.corpo-modal{
+    padding: 1em 0;
+  }
+
+  .fechar-modal {
     
-    transition: width 0.15s, height 0.15s;
+    border-radius: 50%;
+    display: flex;
+    width: 3%;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+  }
+
+  .fechar {
+    display: flex;
+    justify-content: end;
+    width: 100%;
+    height: 15%;
   }
   
   .modal-show  .modal {
@@ -121,16 +173,78 @@
     border: transparent;
   }
 
-#img1{
-  margin-right: 3;
-}
-
-
 
 .btnModal{
     background-color: transparent;
     border: transparent;
+    
 }
+
+.img-modal {
+    width: 90px;
+    height: 90px;
+    border: 3px solid #0B1226;
+    border-radius: 50%;
+    overflow: hidden;
+    display: flex;
+    
+
+}
+
+.equipe-modal {
+align-items: center;
+
+width: 28%;
+height: 50%;
+display: flex;
+flex-direction: column;
+text-align: center;
+font-size: 14px;
+font-family: roboto Condensed;
+color: black;
+font-style: bold;
+
+}
+
+.equipe-modal::after{
+  content:"";
+  padding: 2px;
+  background-color:#0B1226;
+  display: flex;
+  width: 40%;
+  margin-top: 2%;
+}
+
+.corpo-modal{
+
+  width: 100%;
+  text-align: center;
+  font-size: 12px;
+  font-family: roboto Condensed;
+
+}
+
+#github{
+  width: 3.5%;
+  margin-right: 2px;
+  margin-right: 3px;
+  margin-left: 6px;
+
+}
+
+#linkedin{
+  width: 3.5%;
+  margin-right: 3px;
+
+}
+
+#icones {
+  margin-top: 4px;
+  display: flex;
+  justify-content: center;
+}
+
+
 
 
 

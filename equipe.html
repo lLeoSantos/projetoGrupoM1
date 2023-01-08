@@ -45,47 +45,27 @@
 
     <!-- abre div "pai" -->
     <div class="containerEquipe">
+        
         <!-- abre section responsavel por alinhar tudo em column -->
         <section class="equipe">
 
             <h1 class="equipe-titulo">Equipe de desenvolvimento</h1>
-            <!-- abre div responsável pelo fundo transparente onde fica o modal -->
-            <div class="modal-container">
-                <!-- Abre div responsável pelo conteudo dentro do modal-->
-                <div class="modal">
-                    <!-- Imagem dentro do modal -->
-                    <section class="equipe-img">
-                        <img src="assets/img/joao.jpeg" alt="">
-                    </section>
-                    <div>
-                        João Vitor
-                    </div>
-                    <div>
-                        22 anos | Limeira - SP
-                    </div>
-                    <div>
-                        <a href="">Linkedin</a> | <a href="">Github</a>
-                    </div>
-                </div>
-                <!-- fecha div responsável pelo conteudo dentro do modal-->
-            </div>
-            <!-- fecha div responsável pelo fundo transparente onde fica o modal -->
+            
             
             <!-- Abre div para organizar imagens-->
             <div class="equipe-alinhar">
                 
                 <!-- chama função -->
-                <div  class= "open-modal-button">
-                    <button href=".abrir-modal" class="btnModal">
-                        <section class="equipe-img" id="img1">
+                <div>
+                    <button data-abre-modal="#modal1" class="btnModal">
+                        <section class="equipe-img">
                             <img src="assets/img/joao.jpeg" alt="">
                         </section>
                     </button>
                 </div>
-
-
-                <div  class= "open-modal-button2">
-                    <button  class="img-abaixo" href=".abrir-modal2">
+                
+                <div>
+                    <button data-abre-modal="#modal2" class="img-abaixo">
                         <section class="equipe-img">
                             <img src="assets/img/joao.jpeg" alt="">
                         </section>
@@ -93,8 +73,8 @@
                 </div>
 
 
-                <div  class= "open-modal-button">
-                    <button  class="btnModal" href=".abrir-modal3">
+                <div>
+                    <button data-abre-modal="#modal3" class="btnModal">
                         <section class="equipe-img">
                             <img src="assets/img/joao.jpeg" alt="">
                         </section>
@@ -102,8 +82,8 @@
                 </div>
 
 
-                <div  class= "open-modal-button">
-                    <button  class="img-abaixo" href=".abrir-modal4">
+                <div>
+                    <button data-abre-modal="#modal4" class="img-abaixo">
                         <section class="equipe-img">
                             <img src="assets/img/joao.jpeg" alt="">
                         </section>
@@ -113,9 +93,106 @@
 
             </div>
             
+            <div id="modal1" class="modal">
+                <div class="fechar">
+                    <span class="fechar-modal"><img src="assets/img/icons/fechar.svg"></span>
+                </div>
+                <header class="equipe-modal">
+                    <figure class="img-modal">
+                        <img src="assets/img/joao.jpeg" alt="">
+                    </figure>
+                    João Vitor Dias
+                </header>
+                <div class="corpo-modal">
+                    Limeira - SP
+                    <div id="icones">
+                        <div id="linkedin">
+                            <img src="assets/img/icons/linkedin.svg">
+                        </div>
+                        <a href="">Linkedin</a>&nbsp; | 
+                        <div id="github">
+                            <img src="assets/img/icons/github.svg">
+                        </div><a href="">Github</a>
 
+                    </div>
+                </div>
+            </div>
         </section>
-        <!-- fecha section responsavel por alinhar tudo em column -->
+
+        <div id="modal2" class="modal">
+            <div class="fechar">
+                <span class="fechar-modal"><img src="assets/img/icons/fechar.svg"></span>
+            </div>
+            <header class="equipe-modal">
+                <figure class="img-modal">
+                    <img src="assets/img/joao.jpeg" alt="">
+                </figure>
+                Leonardo Santos
+            </header>
+            <div class="corpo-modal">
+                Niterói - RJ
+                <div id="icones">
+                    <div id="linkedin">
+                        <img src="assets/img/icons/linkedin.svg">
+                    </div>
+                    <a href="">Linkedin</a>&nbsp; | 
+                    <div id="github">
+                        <img src="assets/img/icons/github.svg">
+                    </div><a href="">Github</a>
+
+                </div>
+            </div>
+        </div>
+
+        <div id="modal3" class="modal">
+            <div class="fechar">
+                <span class="fechar-modal"><img src="assets/img/icons/fechar.svg"></span>
+            </div>
+            <header class="equipe-modal">
+                <figure class="img-modal">
+                    <img src="assets/img/joao.jpeg" alt="">
+                </figure>
+                Jonatas Nascimento
+            </header>
+            <div class="corpo-modal">
+                São Paulo - SP
+                <div id="icones">
+                    <div id="linkedin">
+                        <img src="assets/img/icons/linkedin.svg">
+                    </div>
+                    <a href="">Linkedin</a>&nbsp; | 
+                    <div id="github">
+                        <img src="assets/img/icons/github.svg">
+                    </div><a href="">Github</a>
+
+                </div>
+            </div>
+        </div>
+
+        <div id="modal4" class="modal">
+            <div class="fechar">
+                <span class="fechar-modal"><img src="assets/img/icons/fechar.svg"></span>
+            </div>
+            <header class="equipe-modal">
+                <figure class="img-modal">
+                    <img src="assets/img/joao.jpeg" alt="">
+                </figure>
+                Thiago Soares
+            </header>
+            <div class="corpo-modal">
+                Ribeirão Preto - SP
+                <div id="icones">
+                    <div id="linkedin">
+                        <img src="assets/img/icons/linkedin.svg">
+                    </div>
+                    <a href="">Linkedin</a>&nbsp; | 
+                    <div id="github">
+                        <img src="assets/img/icons/github.svg">
+                    </div><a href="">Github</a>
+
+                </div>
+            </div>
+        </div>
     </div>
     <!-- fecha div "pai" -->
 
@@ -130,7 +207,7 @@
             são realizadas através da Game Show International, S.à r.l.</p>
         </div>
     </footer>
-
+<div id="mascara"></div>
 <script src="assets/js/equipe.js"></script>
 </body>
 </html>
