@@ -1,14 +1,17 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap');
-body{
-    background-color: rgb(45, 44, 46);
-}
+
 .containerEquipe {
     width: 100%;
     height: 100vh;
-
+    background-color: #0B1226;
     display: flex;
     justify-content: center;
     align-items: center;
+
+
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: fixed;
 }
 
 
@@ -29,13 +32,22 @@ body{
 .equipe-alinhar{
     border: solid 3px;
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
+    background-image: url("../img/linhas.png");
+    background-position: center;
+    background-size: 130%;
+    
+}
+
+.equipe{
+  border: solid 3px;
+  width: 70%;
 }
 
 .equipe-titulo::after{
     content:"";
     padding: 2px;
-    background-color: blue;
+    background-color:#10731F;
     display: flex;
     margin: 0 auto;
     width: 20%;
@@ -99,17 +111,23 @@ body{
   .img-abaixo{
     display: flex;
     margin-top: 140%;
+    background-color: transparent;
+    border: transparent;
   }
 
-  .img-topo{
-    margin-top: 0;
-  }
+#img1{
+  margin-right: 3;
+}
 
 
 
-button{
+.btnModal{
     background-color: transparent;
     border: transparent;
 }
 
-    
+
+
+/*responsividade ------ */
+
+@media (max-width )
