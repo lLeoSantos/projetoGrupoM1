@@ -26,11 +26,17 @@
 
 .equipe-img img{
     width: 100%;
-
+    cursor: pointer;
+}
+.equipe-img:hover{
+    transition: all 1s;
+    -webkit-transform: rotateZ(360deg);
+    transform: rotateZ(360deg);
+    -webkit-filter: drop-shadow(15px 10px 5px rgba(0,0,0,.5));
+    filter: drop-shadow(15px 10px 5px #10731f81);
 }
 
 .equipe-alinhar{
-    border: solid 3px;
     display: flex;
     justify-content: space-around;
     background-image: url("../img/linhas.png");
@@ -40,7 +46,7 @@
 }
 
 .equipe{
-  border: solid 3px;
+
   width: 70%;
 }
 
@@ -129,5 +135,3 @@
 
 
 /*responsividade ------ */
-
-@media (max-width )

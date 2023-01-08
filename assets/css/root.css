@@ -1,14 +1,14 @@
 *{
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 html{
     /* Fonte equivale a 10px */
-    font-size: 40%;
+    font-size: 62.5%;
 }
 body{
-    width: 100vw;
-    height: 100vh;
+    max-width: 100%;
     display: flex;
     flex-direction: column;
 }
@@ -25,11 +25,12 @@ ul{
 
 /* Definições da HEADER */
 #headerContainer{
-    display: flex;
     width: 100%;
-    background-color: gray;
+    display: flex;
+    background-color: #000000;
     justify-content: space-between;
     align-items: center;
+    color: #05F258;
 }
 
 .logo{
@@ -64,7 +65,7 @@ li{
 /* Icone do carrinho de compras */
 #carrinho {
     margin: 0.5rem;
-    margin-right: 1.6vw;
+    margin-right: 1.6rem;
 
 }
 
@@ -76,16 +77,16 @@ li{
     'opsz' 48
 }
 
-/* Definições do FOOTER */
 #footerContainer{
     display: flex;
-    background-color: grey;
+    background-color: #000000;
     justify-content: center;
     margin-top: auto;
-    box-sizing: border-box; 
+    width: 100%;
 }
 
 #footerP{
+    color: #05F258;
     margin-left: 1.5vw;
     margin-top: 1vh;
     font-size: 1.6rem;
