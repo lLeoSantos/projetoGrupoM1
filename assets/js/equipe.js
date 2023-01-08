@@ -1,28 +1,27 @@
-//funçao para pegar os elementos da pagina
-// getElement vai receber os parametros (queries) que quero fazer
-                    //spreed operator                     //queries que eu recebi
-const getElement = (...queries) => document.querySelector(...queries);
+const botoes = document.querySelectorAll('[data-abre-modal]')
+for (let botaoE1 of botoes){
+	botaoE1.addEventListener('click', abreModal);
+}
 
-//pegando elementos
-const button = getElement('.open-modal-button');
-const container = getElement('.modal-container');
-const modal = getElement('.modal');
-//variavel
-const activeModalClass = 'modal-show';
+function abreModal(e) {
+	const botaoClicadoE1 = e.currentTarget;
+	const seletorDoModal = botaoClicadoE1.dataset.abreModal;
+	const modalE1 = document.querySelector(seletorDoModal);
+	modalE1.classList.add('visivel');
+}
 
-// criando funções para abrir e fechar modal
-//classList retorna lista de classes do container
-//adicionando a classe modal-show na lista de classes do container
-const openModal = () => container.classList.add(activeModalClass);
-const closeModal = () => container.classList.remove(activeModalClass);
+const botoesDeFechar = document.querySelectorAll('.fechar-modal');
+botoesDeFechar.forEach(fechaE1 => fechaE1.addEventListener('click',fechaModal));
 
-//evento click do botao
-button.addEventListener('click', openModal);
+function fechaModal(e) {
+	const fecharModalE1 = e.currentTarget;
+	const modalE1 = fecharModalE1.closest('.modal');
+	modalE1.classList.remove('visivel');
+}
 
-//se o modal contem o evento target, nao fechar o modal
-container.addEventListener('click', (event) => {
-	if (modal.contains(event.target)) return;
-	
-	closeModal();
-});
+const mascaraE1 = document.querySelector('#mascara');
+mascaraE1.addEventListener('click', fechaModalAberto);
 
+function fechaModalAberto() {
+	document.querySelector('modal.visivel').classList.remove('visivel');
+}
