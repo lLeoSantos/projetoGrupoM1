@@ -40,7 +40,7 @@ h1, h2, h3, h4, h5 {
 .funcionarios{
     display: block;
     width: 40%;
-    height: 35%;
+    height: auto;
     justify-items: center;
     justify-content: center;
     margin-left: 29%;
@@ -84,8 +84,25 @@ h1, h2, h3, h4, h5 {
     margin-left: 1%;
     margin-right: 1%;
     padding: 1%;
+    font-size: 20px;
 }
 
 footer {
     flex-shrink: 0;
+}
+
+/* Media Querry */
+
+@media (max-width: 1500px) {
+    #quemSomos{ 
+        margin-top: 2%;    
+    }
+    .paragrafoQuem {
+        font-size: 18px;
+    }
+}
+@media (max-width: 425px) {
+    .paragrafoQuem {
+        font-size: 14px;
+    }
 }
