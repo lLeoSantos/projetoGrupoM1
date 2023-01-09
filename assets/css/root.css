@@ -123,7 +123,12 @@ li{
         display: flex;
         width: 50rem;
         flex-flow: column nowrap;
+        justify-content: space-evenly;
         align-items: center;
+
+        position: absolute;
+        background-color: #0d0d0d;
+
     }
 
 
