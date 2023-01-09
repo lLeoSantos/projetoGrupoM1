@@ -1,11 +1,28 @@
-@media (max-width: 710px) {
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+
+/* Ajustes de responsividade para cada quebra de pagina */
+@media (max-width: 1088px) {
     #containerLoja{
-        width: 60%;
+        width: 70%;
+    }
+}
+@media (max-width: 1018px) {
+    .loja{
+        grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    }
+}
+@media (max-width: 710px) {
+    #pesquisa{
+        width: 20rem;
     }
 }
 @media (max-width: 673px) {
     html{
         font-size: 50%;
+    }
+    #pesquisa {
+        width: 20rem;
     }
 }
 @media (max-width: 550px) {
@@ -15,16 +32,64 @@
     #carrossel{
         min-height: 150px;
     }
+    #pesquisa input{
+        font-size: 1.2rem;
+    }
 }
 @media (max-width: 430px) {
     html{
         font-size: 35%;
     }
-    .itensLoja{
-        width: 70%;
+    #pesquisa{
+        width: 11rem;
     }
-    #pesquisa input{
-        font-size: 1.2rem;
+    /* Config teste para o menu  */
+    nav {
+        display: none;
+    }
+
+    #home, #sobre, #equipe{
+        background: #fff;
+        width: 100%;
+        height: 3px;
+        margin: 5px auto;
+    }
+    .containerToggle{
+        width: 30px;
+        height: 25px;
+        
+    }
+    .menuToggle.on{
+        position: absolute;
+        top: 0;
+        /* left: 0; */
+        background: linear-gradient(0deg, rgba(11,18,38,1) 42%, rgba(23,23,94,1) 100%);
+        width: 100vw;
+        height: 100vh;
+
+        z-index: 7;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .menuToggle.on nav{
+        display: block;
+    }
+    .menuToggle.on .containerToggle{
+        position: absolute;
+        top: 10px;
+        margin-right: 10px;
+    }
+    .menuToggle.on nav ul{
+        display: block;
+        text-align: center;
+    }
+    .menuToggle.on nav ul li{
+        transition-duration: 0.5s;
+        font-size: 4rem;
+        line-height: 8rem;
+        font-family: 'Poppins', sans-serif;
     }
 }
 @media (max-width: 380px) {
@@ -33,9 +98,6 @@
     }
     #pesquisa input{
         font-size: 1.2rem;
-    }
-    .itensLoja{
-        width: 60%;
     }
 }
 @media (max-width: 330px) {

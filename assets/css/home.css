@@ -1,4 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+
 /* Meio da pagina */
 #meio{
     width: 100%;
@@ -52,19 +54,66 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    width: 80%;
 }
 #carrossel{
-    margin-top: 2rem;
-    border-radius: 50px;
-    width: 100%;
-    min-height: 250px;
-    background: #D9D9D9;
+    width: 60%;
+    min-width: 350px;
+    max-height: 250px;
+    overflow: hidden;
+    box-shadow: 2px 2px 4px #000;
+    border-radius: 20px;
+    margin-top: 5rem;
 }
-#carrossel:hover, .itensLoja:hover{
-    box-shadow: 2px 2px 20px #296CA6;
-    transition: all 200ms ease-in;
+#carrossel:hover{
+    box-shadow: 2px 2px 10px #296CA6;
 }
+#carrossel .slide img{
+    object-fit: cover;
+}
+#carrossel input{
+    display: none;
+}
+.navegacao{
+    display: flex;
+    padding: 5px;
+}
+
+.btNav{
+    width: 8rem;
+    height: 15px;
+    margin: 6px;
+    border: 2px solid #05f258;
+    border-radius: 15px;
+    cursor: pointer;
+    transform: 0.5s ease;
+}
+.btNav:hover{
+    background-color: #296CA6;
+}
+.containerCarrossel{
+    display: flex;
+    width: 400%;
+}
+.slide{
+    width: 25%;
+    transition: .5s;
+}
+
+/* config para fazer o efeito de transição   */
+#slide1:checked ~ .on{
+    margin-left: 0;
+}
+#slide2:checked ~ .on{
+    margin-left: -25%;
+}
+#slide3:checked ~ .on{
+    margin-left: -50%;
+}
+#slide4:checked ~ .on {
+    margin-left: -75%;
+}
+
+
 /* config loja */
 #containerLoja{
     margin-top: 1rem;
@@ -82,7 +131,7 @@
 }        
 .loja{
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
     gap: 5rem
 }
 .itensLoja, .itensLoja img{
@@ -93,4 +142,5 @@
 }
 .itensLoja:hover{
     transform: scale(1.1);
+    box-shadow:  2px 2px 10px #296CA6;
 }
