@@ -3,7 +3,8 @@ p, label, input {
     font-size: 1.5rem;
     font-family: monospace;
     color: #10731f;
-    text-shadow: 1px 1px 1px #f2f2f2;
+    text-shadow: 1px 1px 1px #f2f2f2,
+                -0.2px -0.2px #f2f2f2;
 }
 
 body {
