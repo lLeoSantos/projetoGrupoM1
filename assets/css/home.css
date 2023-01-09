@@ -1,0 +1,146 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+
+/* Meio da pagina */
+#meio{
+    width: 100%;
+    background: linear-gradient(0deg, rgba(11,18,38,1) 42%, rgba(23,23,94,1) 100%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+/* Config barra de pesquisa */
+#busca{
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+}
+#pesquisa{
+    height: 2rem;
+    width: 25rem;
+    margin: 2.2rem;
+    border-radius: 23px;
+    background:#D9D9D9;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.5%;
+}
+#pesquisa input{
+    width: 69%;
+}
+#btPesquisa{
+    width: 29%;
+    font-size: 1.6rem;
+}
+#pesquisa input, #btPesquisa{
+    background: none;
+    border: none;
+    outline: none;
+}
+#pesquisa:hover{
+    box-shadow: 2px 2px 10px #296CA6;
+    transition: all 200ms linear;
+}
+#btPesquisa:hover{
+    cursor: pointer;
+}
+
+/* Config carrossel */
+#cards{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+#carrossel{
+    width: 60%;
+    min-width: 350px;
+    max-height: 250px;
+    overflow: hidden;
+    box-shadow: 2px 2px 4px #000;
+    border-radius: 20px;
+    margin-top: 5rem;
+}
+#carrossel:hover{
+    box-shadow: 2px 2px 10px #296CA6;
+}
+#carrossel .slide img{
+    object-fit: cover;
+}
+#carrossel input{
+    display: none;
+}
+.navegacao{
+    display: flex;
+    padding: 5px;
+}
+
+.btNav{
+    width: 8rem;
+    height: 15px;
+    margin: 6px;
+    border: 2px solid #05f258;
+    border-radius: 15px;
+    cursor: pointer;
+    transform: 0.5s ease;
+}
+.btNav:hover{
+    background-color: #296CA6;
+}
+.containerCarrossel{
+    display: flex;
+    width: 400%;
+}
+.slide{
+    width: 25%;
+    transition: .5s;
+}
+
+/* config para fazer o efeito de transição   */
+#slide1:checked ~ .on{
+    margin-left: 0;
+}
+#slide2:checked ~ .on{
+    margin-left: -25%;
+}
+#slide3:checked ~ .on{
+    margin-left: -50%;
+}
+#slide4:checked ~ .on {
+    margin-left: -75%;
+}
+
+
+/* config loja */
+#containerLoja{
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    padding: 10px;
+    width: 100%;
+    max-width: 900px;
+}
+#titleLoja{
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.6rem;
+    margin-bottom: 2rem;
+    color: #D9D9D9;
+    border-bottom: #05f258 solid 2px;
+}        
+.loja{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+    gap: 5rem
+}
+.itensLoja, .itensLoja img{
+    border-radius: 4%;
+}
+.itensLoja{
+    width: 100%;
+}
+.itensLoja:hover{
+    transform: scale(1.1);
+    box-shadow:  2px 2px 10px #296CA6;
+}

@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/css/home.css">
+    <link rel="stylesheet" href="./assets/css/root.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="stylesheet" href="./assets/css/mediaHome.css">
+    <script src="https://kit.fontawesome.com/f804f86631.js" crossorigin="anonymous"></script>
+    <title>GameShow</title>
+</head>
+<body>
+    <header>
+        <!-- Container do mnenu -->
+        <div id="headerContainer">
+            <!-- Logo da Empresa -->
+            <div class="logo">
+                <img src="assets/img/Logo.png" alt="Game Show" />        
+            </div> <!-- Fechar logo da empresa -->
+
+            <div class="menuToggle" onclick="mudaMenu()">
+                <div class="containerToggle">
+                    <div id="home"></div>
+                    <div id="sobre"></div>
+                    <div id="equipe"></div>
+                    <div id="contato"></div>
+                </div>
+            <!-- Navegação da página -->
+                <nav>
+                    <div id="menu">
+                        <ul>
+                            <li>Inicio</li>
+                            <li>Sobre</li>
+                            <li>Nossa Equipe</li> 
+                            <li>Contato</li>
+                        </ul>
+                    </div> <!-- Fechar menu -->
+                </nav>
+            </div>
+            <!-- Carrinho de compras -->
+            <div id="carrinho">
+                <!-- icone do carrinho de compras -->
+                <span class="material-symbols-outlined">
+                    add_shopping_cart
+                </span>
+            </div>
+        </div> <!-- Fechar headerContainer -->
+    </header> 
+    
+    <!-- Container para todo conteudo da pagina -->
+<main id="meio">
+    <!-- Janela de busca  -->
+    <section id="busca">
+        <div id="pesquisa">
+            <input type="text" class="search-text" placeholder="Pesquisar... ">
+            <button id="btPesquisa"><i class="fa-solid fa-magnifying-glass"></i></button>
+        </div>
+    </section>
+    <!-- Itens da loja  -->
+    <section id="cards">
+        <!-- Espaço para o carrossel  -->
+        <div id="carrossel">
+            <div class="containerCarrossel">
+                <input type="radio" name="slide" id="slide1" checked>
+                <input type="radio" name="slide" id="slide2">
+                <input type="radio" name="slide" id="slide3">
+                <input type="radio" name="slide" id="slide4">
+
+                <div class="slide on">
+                    <img src="https://images.unsplash.com/photo-1667256059621-9583d2010b73?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHx0b3BpYy1mZWVkfDl8eEh4WVRNSExnT2N8fGVufDB8fHx8&auto=format&fit=crop&w=600&q=60" alt="">
+                </div>
+                <div class="slide">
+                    <img src="https://images.unsplash.com/photo-1656041968624-4a471e61016d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHx0b3BpYy1mZWVkfDd8eEh4WVRNSExnT2N8fGVufDB8fHx8&auto=format&fit=crop&w=600&q=60" alt="">
+                </div>
+                <div class="slide">
+                    <img src="https://images.unsplash.com/photo-1669751552853-6e1268cf98e8?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHx0b3BpYy1mZWVkfDEwfHhIeFlUTUhMZ09jfHxlbnwwfHx8fA%3D%3D&auto=format&fit=crop&w=600&q=60" alt="">
+                </div>
+                <div class="slide">
+                    <img src="https://images.unsplash.com/photo-1671474087718-8bb4f50658aa?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHx0b3BpYy1mZWVkfDE1fHhIeFlUTUhMZ09jfHxlbnwwfHx8fA%3D%3D&auto=format&fit=crop&w=600&q=60" alt="">
+                </div>
+            </div>
+
+        </div>
+        <div class="navegacao">
+            <label class="btNav" for="slide1"></label>
+            <label class="btNav" for="slide2"></label>
+            <label class="btNav" for="slide3"></label>
+            <label class="btNav" for="slide4"></label>
+        </div>
+        <!-- A loja  -->
+        <div id="containerLoja">
+            <div id="titleLoja"><h1>JOGOS EM DESTAQUE</h1></div>
+            <div class="loja">
+                <div class="itensLoja"><img src="./assets/img/pegaCipo.png" alt="Pega cipo"></div>
+                <div class="itensLoja"><img src="./assets/img/pegaCipo.png" alt="Pega cipo"></div>
+                <div class="itensLoja"><img src="./assets/img/pegaCipo.png" alt="Pega cipo"></div>
+                <div class="itensLoja"><img src="./assets/img/pegaCipo.png" alt="Pega cipo"></div>
+                <div class="itensLoja"><img src="./assets/img/pegaCipo.png" alt="Pega cipo"></div>
+                <div class="itensLoja"><img src="./assets/img/pegaCipo.png" alt="Pega cipo"></div>
+                <div class="itensLoja"><img src="./assets/img/pegaCipo.png" alt="Pega cipo"></div>
+                <div class="itensLoja"><img src="./assets/img/pegaCipo.png" alt="Pega cipo"></div>
+                <div class="itensLoja"><img src="./assets/img/pegaCipo.png" alt="Pega cipo"></div>
+            </div>
+        </div>
+    </section>
+</main>
+<footer>
+    <div id="footerContainer">
+        <div class="logo">
+            <img src="assets/img/Logo.png" alt="Game Show Logo">
+        </div>
+       <p id="footerP">© 2023, Game Show, Inc. Todos os direitos reservados. Game Show, o logotipo da Game Show,  
+        são marcas comerciais ou registradas da Game Show, Inc. nos do Brasil e em outros lugares. Outras marcas e 
+        nomes de produtos são marcas registradas de seus respectivos donos. Transações para além da América Latina 
+        são realizadas através da Game Show International, S.à r.l.</p>
+    </div>
+</footer>
+
+<script src="./assets/js/menu.js"></script>
+<script src="./assets/js/carrossel.js"></script>
+</body>
+</html>
