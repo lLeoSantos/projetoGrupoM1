@@ -1,20 +1,20 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap');
 
+/* classe pai */
 .containerEquipe {
     width: 100%;
     height: 100vh;
-    background-color: #0B1226;
     display: flex;
     justify-content: center;
     align-items: center;
 
-    border: 3px solid red;
+    background-color: #0B1226;
     background-size: 100%;
     background-repeat: no-repeat;
     background-position: fixed;
 }
 
-
+/*classe responsavel pelas imagens da equipe*/
 .equipe-img{
     width: 140px;
     height: 140px;
@@ -23,7 +23,7 @@
     overflow: hidden;
     display: flex;
 }
-
+/* tamanho da imagem */
 .equipe-img img{
     width: 100%;
     cursor: pointer;
@@ -35,9 +35,8 @@
     -webkit-filter: drop-shadow(15px 10px 5px rgba(0,0,0,.5));
     filter: drop-shadow(15px 10px 5px #10731f81);
 }
-
+/*alinhar equipe*/
 .equipe-alinhar{
-  border: 3px solid red;
     display: flex;
     justify-content: space-around;
     background-image: url("../img/linhas.png");
@@ -47,7 +46,6 @@
 }
 
 .equipe{
-  border: solid 3px red;
   width: 70%;
 }
 
@@ -71,6 +69,7 @@
 }
 
 .modal-container {
+
     background: rgba(0, 0, 0, 0.2);
     
     width: 100%;
@@ -88,7 +87,7 @@
     
     transition: opacity 0.15s;
   }
-  
+  /* config modal */
   .modal {
       display: flex;
       flex-direction: column;
@@ -106,14 +105,14 @@
       opacity: 0;
       pointer-events: none;
   }
-
+/*responsavel por deixar o modal visivel*/
   .modal.visivel{
     opacity: 1;
     pointer-events: initial;
     transform: translateY(-50%);
   }
 
-
+/*config mascara que fica atras do modal */
   #mascara{
     position: fixed;
     left: 0;
@@ -123,13 +122,14 @@
     background-color: black;
     opacity: 0;
     pointer-events: none;
+  
   }
-
+/* para mascara ficar visivel */
   .modal.visivel ~ #mascara {
     opacity: 1;
     pointer-events: initial;
   }
-
+/* configuração para exibir modal*/
   .modal > header {
     display: flex;
     justify-content: space-between;
@@ -223,7 +223,7 @@ font-style: bold;
   font-family: roboto Condensed;
 
 }
-
+/*icones */
 #github{
   width: 3.5%;
   margin-right: 2px;
@@ -244,8 +244,36 @@ font-style: bold;
   justify-content: center;
 }
 
-
-
-
-
 /*responsividade ------ */
+
+
+
+@media (max-width: 680px){
+
+.equipe-img{
+    width: 200px;
+    height: 200px;
+    border: 3px solid;
+    border-radius: 50%;
+    overflow: hidden;
+    display: flex;
+}
+
+.equipe-alinhar{
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  align-items: center;
+  background-image: none;
+}
+
+.img-abaixo{
+margin-top: 15px;
+
+}
+
+.btnModal{
+  margin-top: 15px;  
+}
+}
