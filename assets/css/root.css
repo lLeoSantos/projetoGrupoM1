@@ -36,7 +36,7 @@ ul{
 }
 
 .logo{
-    max-width: 5rem;
+    width: 5rem;
     margin: 0.5rem;
     margin-right: 0;
     margin-left: 1.6vw; 
@@ -48,14 +48,21 @@ nav{
     width: 100%;
 }
 
-#botaoMenu {
-    display: none;
+.menuToggle{
+    display: flex;
+    width: 70%;
+    justify-content: center;
+}
+
+.containerToggle {
+    display: none!important;
 }
 
 #menu{
     display: flex;
     flex-flow: row nowrap;
     justify-content: Center;
+    width: 100%;
 }
 
 #openMenu{
@@ -104,33 +111,93 @@ li{
     font-size: 1.6rem;
 }
 
-
-
-/* Responsividade para Celulares (672px) */
-@media (max-width: 672px) {
-    /* Botão Menu */
-    #botaoMenu {
-    display: flex;
+/* Responsividade para Tablets (1104px) */
+    /* Conteúdo da página */
+    @media (max-width: 1104px) { 
+        #menu li {
+            white-space: nowrap;
+            padding: 0 7%;
+        }          
     }
 
-    /* Menu */
-    #openMenu {
-        display: none;
+/* Responsividade para 620px */
+    @media (max-width: 620px) {
+        nav {
+            width: 60%;
+        }
+        #menu li {
+            white-space: nowrap;
+            padding: 0 5%;
+        }
+    }
+/* Responsividade para 673px */
+    @media (max-width: 673px) {
+        html{
+            font-size: 50%;
+        }
     }
 
-    #botaoMenu:active + #openMenu ,
-    #openMenu:hover {
-        display: flex;
-        width: 50rem;
-        flex-flow: column nowrap;
-        justify-content: space-evenly;
-        align-items: center;
-
-        position: absolute;
-        background-color: #0d0d0d;
-
+/* Responsividade para 550px */
+    @media (max-width: 550px) {
+        html{
+            font-size: 40%;
+        }
     }
 
+/* Responsividade para Celulares (430px) - Menu */
+    @media (max-width: 430px) {
+        html{
+            font-size: 35%;
+        }
+        #pesquisa{
+            width: 11rem;
+        }
+        /* Config teste para o menu  */
+        nav {
+            display: none;
+        }
+        .containerToggle{
+            display: flex!important;
+            
+        }
+        .menuToggle.on{
+            position: absolute;
+            top: 0;
+            /* left: 0; */
+            background: linear-gradient(0deg, rgba(11,18,38,1) 42%, rgba(23,23,94,1) 100%);
+            width: 100vw;
+            height: 100vh;
 
+            z-index: 7;
 
-}
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .menuToggle.on nav{
+            display: block;
+        }
+        .menuToggle.on .containerToggle{
+            position: absolute;
+            top: 10px;
+            margin-right: 10px;
+        }
+        #menu{
+            display: flex;
+            flex-flow: column nowrap;
+            justify-content: Center;
+            width: 100%;
+            height: 100%;
+        }
+        #openMenu{
+            display: block;
+            width: 100%;
+            text-align: center;
+        }
+        .menuToggle.on nav ul li{
+            transition-duration: 0.5s;
+            font-size: 4rem;
+            line-height: 8rem;
+            font-family: 'Poppins', sans-serif;
+        }
+    }

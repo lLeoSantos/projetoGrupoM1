@@ -25,23 +25,24 @@
           <img src="assets/img/Logo.png" alt="Game Show" />
         </div>
         <!-- Fechar logo da empresa -->
-
+        <div class="menuToggle">
         <!-- Navegação da página -->
-        <nav>
-          <div id="menu">
-            <!-- Botão de menu -->
-            <div id="botaoMenu" class="material-symbols-outlined">menu</div>
-            <!-- Fechamento Botão de menu -->
 
-            <ul id="openMenu">
-              <li>Inicio</li>
-              <li>Sobre</li>
-              <li>Nossa Equipe</li>
-              <li>Contato</li>
-            </ul>
-          </div>
-          <!-- Fechar menu -->
-        </nav>
+          <!-- Botão de menu -->
+          <div class="material-symbols-outlined containerToggle" onclick="mudaMenu()">menu</div>
+          <!-- Fechamento Botão de menu -->
+          <nav>
+            <div id="menu">
+              <ul id="openMenu">
+                <li>Inicio</li>
+                <li>Sobre</li>
+                <li>Nossa Equipe</li>
+                <li>Contato</li>
+              </ul>
+            </div>
+            <!-- Fechar menu -->
+          </nav>
+        </div> <!-- Fechar menu Toggle-->
 
         <!-- Carrinho de compras -->
         <div id="carrinho">
@@ -125,5 +126,6 @@
         </p>
       </div>
     </footer>
+    <script src="assets/js/menu.js"></script>
   </body>
 </html>
