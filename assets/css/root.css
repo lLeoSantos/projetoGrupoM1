@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
 *{
     margin: 0;
     padding: 0;
@@ -7,6 +9,7 @@ html{
     /* Fonte equivale a 10px */
     font-size: 62.5%;
     min-height: 100%;
+    font-family: 'Poppins', sans-serif;
 }
 body{
     width: 100%;
@@ -107,23 +110,52 @@ li{
 
 
 /* Responsividade para Celulares (672px) */
-/* @media (max-width: 672px) {
-    Botão Menu
-    #botaoMenu {
-    display: flex;
-    }
-
-    Menu
-    #openMenu {
+@media (max-width: 672px) {
+    nav {
         display: none;
     }
 
-    #botaoMenu:active + #openMenu ,
-    #openMenu:hover {
-        display: flex;
-        width: 50rem;
-        flex-flow: column nowrap;
-        align-items: center;
-    } */
+    #home, #sobre, #equipe{
+        background: #fff;
+        width: 100%;
+        height: 3px;
+        margin: 5px auto;
+    }
+    .containerToggle{
+        width: 30px;
+        height: 25px;
+        
+    }
+    .menuToggle.on{
+        position: absolute;
+        top: 0;
+        background: linear-gradient(0deg, rgba(11,18,38,1) 42%, rgba(23,23,94,1) 100%);
+        width: 100vw;
+        height: 100vh;
 
-/* } */
+        z-index: 7;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .menuToggle.on nav{
+        display: block;
+    }
+    .menuToggle.on .containerToggle{
+        position: absolute;
+        top: 10px;
+        margin-right: 10px;
+    }
+    .menuToggle.on nav ul{
+        display: block;
+        text-align: center;
+    }
+    .menuToggle.on nav ul li{
+        transition-duration: 0.5s;
+        font-size: 4rem;
+        line-height: 8rem;
+        font-family: 'Poppins', sans-serif;
+    }
+
+}

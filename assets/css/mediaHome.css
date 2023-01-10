@@ -44,7 +44,7 @@
         width: 11rem;
     }
     /* Config teste para o menu  */
-    nav {
+    /* nav {
         display: none;
     }
 
@@ -89,7 +89,7 @@
         font-size: 4rem;
         line-height: 8rem;
         font-family: 'Poppins', sans-serif;
-    }
+    } */
 }
 @media (max-width: 380px) {
     html{
