@@ -3,7 +3,7 @@
   box-sizing: border-box;
 }
 
-@import url("https://fonts.googleapis.com/css?family=Inconsolata:500");
+@import url(https://fonts.googleapis.com/css2?family=Poppins&display=swap%27);
 
 html,
 body {
@@ -14,7 +14,7 @@ body {
 
 body {
   background: #0b1226;
-  font-family: "Inconsolata", monospace;
+  font-family: "Poppins", sans-serif;
   font-weight: 500;
   line-height: 1.1;
 }
@@ -102,11 +102,8 @@ footer {
   }
   .funcionarios {
     width: auto;
-    margin-left: 3%;
-    margin-right: 3%;
-  }
-  html{
-    height: auto;
+    margin-left: 8%;
+    margin-right: 8%;
   }
 }
 @media (max-width: 425px) {
@@ -115,32 +112,124 @@ footer {
   }
 }
 
+@media (max-width: 1200px) {
+  html {
+    font-size: 80%;
+  }
+}
+
+@media (max-width: 900px) {
+  html {
+    font-size: 60%;
+  }
+}
+
+/* Menu responsividade */
 
 @media (max-width: 673px) {
-    html{
-        font-size: 50%;
-    }
+  html {
+    font-size: 50%;
   }
+}
 @media (max-width: 550px) {
-    html{
-        font-size: 40%;
-    }
+  html {
+    font-size: 40%;
+  }
 }
 @media (max-width: 430px) {
-    html{
-        font-size: 35%;
-    }
- nav {
-        display: none;
-    }
+  html {
+    font-size: 35%;
+  }
+  nav {
+    display: none;
+  }
 }
 @media (max-width: 380px) {
-    html{
-        font-size: 30%;
-    }
+  html {
+    font-size: 30%;
+  }
 }
 @media (max-width: 330px) {
-    html{
-        font-size: 25%;
-    }
+  html {
+    font-size: 25%;
   }
+}
+
+@media (max-width: 673px) {
+  html {
+    font-size: 50%;
+  }
+}
+@media (max-width: 550px) {
+  html {
+    font-size: 40%;
+  }
+}
+@media (max-width: 430px) {
+  html {
+    font-size: 35%;
+  }
+  /* Config teste para o menu  */
+  nav {
+    display: none;
+  }
+
+  #home,
+  #sobre,
+  #equipe {
+    background: #fff;
+    width: 100%;
+    height: 3px;
+    margin: 5px auto;
+  }
+  .containerToggle {
+    width: 30px;
+    height: 25px;
+  }
+  .menuToggle.on {
+    position: absolute;
+    top: 0;
+    /* left: 0; */
+    background: linear-gradient(
+      0deg,
+      rgba(11, 18, 38, 1) 42%,
+      rgba(23, 23, 94, 1) 100%
+    );
+    width: 100vw;
+    height: 100vh;
+
+    z-index: 7;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .menuToggle.on nav {
+    display: block;
+  }
+  .menuToggle.on .containerToggle {
+    position: absolute;
+    top: 10px;
+    margin-right: 10px;
+  }
+  .menuToggle.on nav ul {
+    display: block;
+    text-align: center;
+  }
+  .menuToggle.on nav ul li {
+    transition-duration: 0.5s;
+    font-size: 4rem;
+    line-height: 8rem;
+    font-family: "Poppins", sans-serif;
+  }
+}
+@media (max-width: 380px) {
+  html {
+    font-size: 30%;
+  }
+}
+@media (max-width: 330px) {
+  html {
+    font-size: 25%;
+  }
+}
