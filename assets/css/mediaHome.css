@@ -62,7 +62,6 @@
     .menuToggle.on{
         position: absolute;
         top: 0;
-        /* left: 0; */
         background: linear-gradient(0deg, rgba(11,18,38,1) 42%, rgba(23,23,94,1) 100%);
         width: 100vw;
         height: 100vh;
