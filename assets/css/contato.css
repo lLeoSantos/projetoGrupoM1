@@ -69,6 +69,11 @@ h1 {
     text-align: center;
 }
 
+#telefone::-webkit-inner-spin-button,
+#telefone::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+}
+
 #enviar {
     flex-basis: 100%;
     display: flex;
@@ -92,6 +97,48 @@ h1 {
 #enviar button:active {
     background: #0b3d13!important;
     transition: none;
+}
+
+/* Quando o campo for requirido */
+.requerido input, .requerido textarea {
+    border: 3px solid red;
+    border-radius: 5px;
+}
+
+.requerido::after {
+    content: 'Este campo precisa ser preenchido';
+    font-family: 'Poppins', monospace;
+    text-shadow: 0.5px 0.5px 1px black;
+    color: red;
+    display: block;
+}
+
+/* Quando o campo telefone não tem somente números */
+.soNumeros input, .requerido textarea {
+    border: 3px solid red;
+    border-radius: 5px;
+}
+
+.soNumeros::after {
+    content: 'Por favor, digite somente números';
+    font-family: 'Poppins', monospace;
+    text-shadow: 0.5px 0.5px 1px black;
+    color: red;
+    display: block;
+}
+
+/* Quando o campo email é inválido */
+.emailInvalido input, .requerido textarea {
+    border: 3px solid red;
+    border-radius: 5px;
+}
+
+.emailInvalido::after {
+    content: 'Por favor, digite um e-mail válido';
+    font-family: 'Poppins', monospace;
+    text-shadow: 0.5px 0.5px 1px black;
+    color: red;
+    display: block;
 }
 
 /* Para talvez incluir na ROOT */

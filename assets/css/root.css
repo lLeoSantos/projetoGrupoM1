@@ -121,7 +121,7 @@ li{
     }
 
 /* Responsividade para 620px */
-    @media (max-width: 620px) {
+    /* @media (max-width: 620px) {
         nav {
             width: 60%;
         }
@@ -129,7 +129,7 @@ li{
             white-space: nowrap;
             padding: 0 5%;
         }
-    }
+    } */
 /* Responsividade para 673px */
     @media (max-width: 673px) {
         html{
@@ -148,9 +148,6 @@ li{
     @media (max-width: 430px) {
         html{
             font-size: 35%;
-        }
-        #pesquisa{
-            width: 11rem;
         }
         /* Config teste para o menu  */
         nav {
