@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../assets/css/root.css">
+    <link rel="stylesheet" href="../assets/css/equipe.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="icon" type="image/jpg" href="../assets/img/logo.png" type="image/png">
+    <title>GameShow</title>
+</head>
+<body>
+    
+    <header>
+        <!-- Container do mnenu -->
+        <div id="headerContainer">
+            <!-- Logo da Empresa -->
+            <div class="logo">
+                <img src="../assets/img/Logo.png" alt="Game Show" />        
+            </div> <!-- Fechar logo da empresa -->
+
+            <div class="menuToggle">
+                <div class="containerToggle" onclick="mudaMenu()">
+                    <div id="primeiraBarra"></div>
+                    <div id="segundaBarra"></div>
+                    <div id="terceiraBarra"></div>
+                </div>
+            <!-- Navegação da página -->
+                <nav>
+                    <div id="menu">
+                        <ul>
+                            <li><a href="../Index.html">Inicio</a></li>
+                            <li><a href="./quemSomos.html">Sobre</a></li>
+                            <li><a href="./equipe.html">Nossa Equipe</a></li>
+                            <li><a href="./contato.html">Contato</a></li>
+                        </ul>
+                    </div> <!-- Fechar menu -->
+                </nav>
+            </div>
+            <!-- Carrinho de compras -->
+            <div id="carrinho">
+                <!-- icone do carrinho de compras -->
+                <span class="material-symbols-outlined">
+                    add_shopping_cart
+                </span>
+            </div>
+        </div> <!-- Fechar headerContainer -->
+    </header> 
+
+
+    <!-- abre div "pai" -->
+    <div class="containerEquipe">
+        
+        <!-- abre section responsavel por alinhar tudo em column -->
+        <section class="equipe">
+
+            <h1 class="equipe-titulo">Equipe de desenvolvimento</h1>
+            
+            
+            <!-- Abre div para organizar imagens-->
+            <div class="equipe-alinhar">
+                
+
+                    <!-- chama função para abrir modal1 -->
+                <div class="teste">
+                    <button data-abre-modal="#modal1" class="btnModal">
+                        <section class="equipe-img">
+                            <img src="../assets/img/joao.jpg" alt="">
+                        </section>
+                    </button>
+                </div>
+
+
+                
+                <div class="teste">
+                    <button data-abre-modal="#modal2" class="img-abaixo">
+                        <section class="equipe-img">
+                            <img src="../assets/img/leo.jfif" alt="">
+                        </section>
+                    </button>
+                </div>
+
+
+
+
+                <div class="teste">
+                    <button data-abre-modal="#modal3" class="btnModal">
+                        <section class="equipe-img">
+                            <img src="../assets/img/jonatas.png" alt="">
+                        </section>
+                    </button>
+                </div>
+
+
+
+
+                <div class="teste">
+                    <button data-abre-modal="#modal4" class="img-abaixo">
+                        <section class="equipe-img">
+                            <img src="../assets/img/thiago.jpg" alt="">
+                        </section>
+                    </button>
+                </div>
+
+
+            </div>
+        </section>
+        
+            <!--   Modal João   -->
+            <div id="modal1" class="modal">
+
+                <div class="fechar">
+                    <span class="fechar-modal"><img src="../assets/img/icons/fechar.svg"></span>
+                </div>
+                <header class="equipe-modal">
+                    <figure class="img-modal">
+                        <img src="../assets/img/joao.jpg" alt="">
+                    </figure>
+                    João Vitor Dias
+                </header>
+                <div class="corpo-modal">
+                    Limeira - SP
+                    <div id="icones">
+                        <div id="linkedin">
+                            <img src="../assets/img/icons/linkedin.svg">
+                        </div>
+                        <a href="https://www.linkedin.com/in/jo%C3%A3o-vitor-dias-%C3%A9vora-51311015b/">Linkedin</a>&nbsp; | 
+                        <div id="github">
+                            <img src="../assets/img/icons/github.svg">
+                        </div><a href="https://github.com/joaovitorevora">Github</a>
+                    </div>
+                </div>
+            </div>
+
+        <!--   Modal Léo   -->
+
+        <div id="modal2" class="modal">
+            <div class="fechar">
+                <span class="fechar-modal"><img src="../assets/img/icons/fechar.svg"></span>
+            </div>
+            <header class="equipe-modal">
+                <figure class="img-modal">
+                    <img src="../assets/img/leo.jfif" alt="">
+                </figure>
+                Leonardo Santos
+            </header>
+            <div class="corpo-modal">
+                Niterói - RJ
+                <div id="icones">
+                    <div id="linkedin">
+                        <img src="../assets/img/icons/linkedin.svg">
+                    </div>
+                    <a href="https://www.linkedin.com/in/leonardo-santos-359826191/">Linkedin</a>&nbsp; | 
+                    <div id="github">
+                        <img src="../assets/img/icons/github.svg">
+                    </div><a href="https://github.com/lLeoSantos">Github</a>
+
+                </div>
+            </div>
+        </div>
+
+        <!--   Modal Jonatas   -->
+        
+        <div id="modal3" class="modal">
+            <div class="fechar">
+                <span class="fechar-modal"><img src="../assets/img/icons/fechar.svg"></span>
+            </div>
+            <header class="equipe-modal">
+                <figure class="img-modal">
+                    <img src="../assets/img/jonatas.png" alt="">
+                </figure>
+                Jonatas Nascimento
+            </header>
+            <div class="corpo-modal">
+                São Paulo - SP
+                <div id="icones">
+                    <div id="linkedin">
+                        <img src="../assets/img/icons/linkedin.svg">
+                    </div>
+                    <a href="https://www.linkedin.com/in/jonatas-nascimento-oliveira-0418bb25a/">Linkedin</a>&nbsp; | 
+                    <div id="github">
+                        <img src="../assets/img/icons/github.svg">
+                    </div><a href="https://github.com/Jhonny515">Github</a>
+
+                </div>
+            </div>
+        </div>
+
+        <!--   Thiago   -->
+
+        <div id="modal4" class="modal">
+            <div class="fechar">
+                <span class="fechar-modal"><img src="../assets/img/icons/fechar.svg"></span>
+            </div>
+            <header class="equipe-modal">
+                <figure class="img-modal">
+                    <img src="../assets/img/thiago.jpg" alt="">
+                </figure>
+                Thiago Soares
+            </header>
+            <div class="corpo-modal">
+                Ribeirão Preto - SP
+                <div id="icones">
+                    <div id="linkedin">
+                        <img src="../assets/img/icons/linkedin.svg">
+                    </div>
+                    <a href="https://www.linkedin.com/in/thiago-soares-41b7448b/">Linkedin</a>&nbsp; | 
+                    <div id="github">
+                        <img src="../assets/img/icons/github.svg">
+                    </div><a href="https://github.com/ThiagoMSo">Github</a>
+
+                </div>
+            </div>
+        </div>
+        
+    </div>
+    <!-- fecha div "pai" -->
+
+
+
+    <footer>
+        <div id="footerContainer">
+        <div class="logo">
+            <img src="../assets/img/Logo.png" alt="Game Show Logo">
+        </div>
+            <p id="footerP">© 2023, Game Show, Inc. Todos os direitos reservados. Game Show, o logotipo da Game Show,  
+            são marcas comerciais ou registradas da Game Show, Inc. nos do Brasil e em outros lugares. Outras marcas e 
+            nomes de produtos são marcas registradas de seus respectivos donos. Transações para além da América Latina 
+            são realizadas através da Game Show International, S.à r.l.</p>
+        </div>
+    </footer>
+</div>
+<!-- <div id="mascara"></div> -->
+<script src="../assets/js/equipe.js"></script>
+<script src="../assets/js/menu.js"></script>
+</body>
+</html>

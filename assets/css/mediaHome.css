@@ -1,0 +1,65 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+
+/* Ajustes de responsividade para cada quebra de pagina */
+@media (max-width: 1088px) {
+    #containerLoja{
+        width: 70%;
+    }
+}
+/* Ajuste de tamanho maximo e minimo da loja  */
+@media (max-width: 1018px) {
+
+    .loja{
+        grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    }
+}
+/* Ajuste no tamanho da barra de pesquisa  */
+@media (max-width: 710px) {
+    #pesquisa{
+        width: 20rem;
+    }
+}
+
+/* Reduzindo a fonte de toda a pagina  */
+@media (max-width: 673px) {
+    html{
+        font-size: 50%;
+    }
+}
+
+/* Ajuste de fonte, tamanho do carrossel e barra de pesquisa */
+@media (max-width: 550px) {
+    html{
+        font-size: 40%;
+    }
+    #carrossel{
+        min-height: 150px;
+    }
+    #pesquisa input{
+        font-size: 1.2rem;
+    }
+}
+
+/* Ajsute de fonte e barra de pesquisa */
+@media (max-width: 430px) {
+    html{
+        font-size: 35%;
+    }
+    #pesquisa{
+        width: 11rem;
+    }
+}
+@media (max-width: 380px) {
+    html{
+        font-size: 30%;
+    }
+    #pesquisa input{
+        font-size: 1.2rem;
+    }
+}
+@media (max-width: 330px) {
+    html{
+        font-size: 25%;
+    }
+}

@@ -1,0 +1,307 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap');
+
+/* classe pai */
+.containerEquipe {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background-color: #0B1226;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: fixed;
+}
+
+/*classe responsavel pelas imagens da equipe*/
+.equipe-img{
+    width: 140px;
+    height: 140px;
+    border: 3px solid;
+    border-radius: 50%;
+    overflow: hidden;
+    display: flex;
+}
+/* tamanho da imagem */
+.equipe-img img{
+    width: 100%;
+    cursor: pointer;
+}
+.equipe-img:hover{
+    transition: all 1s;
+    -webkit-transform: rotateZ(360deg);
+    transform: rotateZ(360deg);
+    -webkit-filter: drop-shadow(15px 10px 5px rgba(0,0,0,.5));
+    filter: drop-shadow(15px 10px 5px #10731f81);
+}
+/*alinhar equipe*/
+.equipe-alinhar{
+    display: flex;
+    justify-content: space-around;
+    background-image: url("../img/linhas.png");
+    background-position: center;
+    background-size: 130%;
+    
+}
+/*tamanho da div responsavel pelas imagens*/
+.equipe{
+  width: 70%;
+}
+/*barra em baixo do titulo*/
+.equipe-titulo::after{
+    content:"";
+    padding: 2px;
+    background-color:#10731F;
+    display: flex;
+    margin: 0 auto;
+    width: 20%;
+    margin-top: 1rem;
+}
+/*titulo*/
+.equipe-titulo{
+    text-align: center;
+    font-family: roboto Condensed;
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 30px;
+    margin-bottom: 3rem;
+}
+/*configurando modal e deixando ele "invisivel"*/
+.modal-container {
+
+    background: rgba(0, 0, 0, 0.2);
+    
+    width: 100%;
+    height: 100vh;
+    
+  
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    display: grid;
+    place-items: center;
+    
+    opacity: 0;
+    pointer-events: none;
+    
+    transition: opacity 0.15s;
+  }
+  /* config modal */
+  .modal {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      position: fixed;
+      width: 35%;
+      height: 40%;
+      left: 30%;
+      top: 50vh;
+      background-color: #296CA6;
+      padding: 1rem;
+      box-shadow: 4px 4px 4px #0002;
+      border-radius: 5px;
+      opacity: 0;
+      pointer-events: none;
+  }
+/*responsavel por deixar o modal visivel*/
+  .modal.visivel{
+    opacity: 1;
+    pointer-events: initial;
+    transform: translateY(-50%);
+  }
+
+/*config mascara que fica atras do modal */
+  #mascara{
+    position: fixed;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+
+    
+    background-color: rgba(0, 0, 0,0.6);
+    z-index: 5;
+  
+  }
+/* para mascara ficar visivel */
+  .modal.visivel~#mascara {
+    opacity: 1;
+    pointer-events: initial;
+  }
+/* configuração para exibir modal*/
+  .modal > header {
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid #0001;
+  }
+  .modal>.corpo-modal{
+    padding: 1em 0;
+  }
+/*botao fechar modal tamanho*/
+  .fechar-modal {
+    
+    border-radius: 50%;
+    display: flex;
+    width: 3%;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+  }
+/*botao fechar do modal*/
+  .fechar {
+    display: flex;
+    justify-content: end;
+    width: 100%;
+    height: 15%;
+  }
+/*tamanho do modal*/
+  .modal-show  .modal {
+    width: 350px;
+    height: 250px;
+  }
+
+  .modal-show {
+    opacity: 1;
+    pointer-events: auto;
+  }
+/*alinhando imagem abaixo*/
+  .img-abaixo{
+    display: flex;
+    margin-top: 140%;
+    background-color: transparent;
+    border: transparent;
+  }
+
+/*botao das imagens da equipe*/
+.btnModal{
+    background-color: transparent;
+    border: transparent;
+    
+}
+/*imagem dentro do modal*/
+.img-modal {
+    width: 90px;
+    height: 90px;
+    border: 3px solid #0B1226;
+    border-radius: 50%;
+    overflow: hidden;
+    display: flex;
+    
+
+}
+/*configuração dentro do modal*/
+.equipe-modal {
+align-items: center;
+
+width: 28%;
+height: 50%;
+display: flex;
+flex-direction: column;
+text-align: center;
+font-size: 14px;
+font-family: roboto Condensed;
+color: black;
+font-style: bold;
+
+}
+/*barra em baixo do nome no modal*/
+.equipe-modal::after{
+  content:"";
+  padding: 2px;
+  background-color:#0B1226;
+  display: flex;
+  width: 40%;
+  margin-top: 2%;
+}
+/*texto modal*/
+.corpo-modal{
+
+  width: 100%;
+  text-align: center;
+  font-size: 12px;
+  font-family: roboto Condensed;
+
+}
+/*icones */
+#github{
+  width: 3.5%;
+  margin-right: 2px;
+  margin-right: 3px;
+  margin-left: 6px;
+
+}
+
+#linkedin{
+  width: 3.5%;
+  margin-right: 3px;
+
+}
+
+#icones {
+  margin-top: 4px;
+  display: flex;
+  justify-content: center;
+}
+
+/*responsividade ------ */
+
+
+
+@media (max-width: 680px){
+
+.equipe-img{
+    width: 95px;
+    height: 95px;
+    border: 3px solid;
+    border-radius: 50%;
+    overflow: hidden;
+    display: flex;
+}
+
+.equipe-alinhar{
+  width: 100%;
+  display: flex;
+  /* justify-content: space-between; */
+  flex-direction: column;
+  align-items: center;
+  background-image: none;
+}
+
+.img-abaixo{
+margin-top: 15px;
+
+}
+
+.btnModal{
+  margin-top: 15px;  
+}
+.modal  {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      position: fixed;
+      width: 50%;
+      height: 40%;
+      left: 25%;
+      top: 50vh;
+      background-color: #296CA6;
+      padding: 1rem;
+      box-shadow: 4px 4px 4px #0002;
+      border-radius: 5px;
+      opacity: 0;
+      pointer-events: none;
+}
+
+}
+@media (max-width: 534px){
+.equipe-titulo{
+  text-align: center;
+  font-family: roboto Condensed;
+  color: #fff;
+  text-transform: uppercase;
+  font-size: 2.3rem;
+  margin-bottom: 3rem;
+}
+}

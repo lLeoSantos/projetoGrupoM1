@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../assets/css/root.css" />
+    <link rel="stylesheet" href="../assets/css/quemSomos.css" />
+    <link rel="icon" type="image/jpg" href="../assets/img/logo.png" type="image/png">
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
+    />
+
+    <title>GameShow</title>
+  </head>
+  <body>
+    <header>
+      <!-- Container do mnenu -->
+      <div id="headerContainer">
+        <!-- Logo da Empresa -->
+        <div class="logo">
+          <img src="../assets/img/Logo.png" alt="Game Show" />
+        </div>
+        <!-- Fechar logo da empresa -->
+
+        <div class="menuToggle">
+          <div class="containerToggle" onclick="mudaMenu()">
+            <div id="primeiraBarra"></div>
+            <div id="segundaBarra"></div>
+            <div id="terceiraBarra"></div>
+          </div>
+          <!-- Navegação da página -->
+          <nav>
+            <div id="menu">
+              <ul>
+                <li><a href="../index.html">Inicio</a></li>
+                <li><a href="./quemSomos.html">Sobre</a></li>
+                <li><a href="./equipe.html">Nossa Equipe</a></li>
+                <li><a href="./contato.html">Contato</a></li>
+              </ul>
+            </div>
+            <!-- Fechar menu -->
+          </nav>
+        </div>
+        <!-- Carrinho de compras -->
+        <div id="carrinho">
+          <!-- icone do carrinho de compras -->
+          <span class="material-symbols-outlined"> add_shopping_cart </span>
+        </div>
+      </div>
+      <!-- Fechar headerContainer -->
+    </header>
+
+    <div id="meio">
+      <div class="funcionarios">
+        <img
+          id="foto1"
+          src="../assets/img/Funcionarios.jpg"
+          alt="Funcionarios da Game Show"
+        />
+      </div>
+      <!-- Div de criação: Caixa onde ficará o Sobre da empresa. -->
+      <div id="quemSomos">
+        <p class="paragrafoQuem">
+          Somos a Game show, uma empresa de jogos online, com foco em jogos
+          indies e com o Game Show pass que é um serviço de assinatura que dá
+          acesso a uma biblioteca de jogos sem custo extras e com acesso remoto
+          e em qualquer dispositivo móvel e desktop. <br />
+          Atualmente trabalhamos com pequenos produtores de jogos, em especial
+          os produtores indies, no qual avaliamos diversos jogos e
+          disponibilizamos os melhores games no mercado como o "Pega cipó" que
+          hoje é um game exclusivo nosso e conhecido mundialmente.
+        </p>
+        <br />
+        <p class="paragrafoQuem">
+          Estamos no mercado desde 2022 e, por isso, somos uma das startups mais
+          recentes e com os melhores serviços da atualidade <br />
+          Nos localizamos na Avenida Paulista em São Paulo, de onde temos feito
+          todos os testes em jogos, como nossas reuniões diárias para
+          disponibilização de novos jogos em nossas plataformas.
+        </p>
+        <br />
+        <p class="paragrafoQuem">
+          Nossa empresa possui o mais simples diferencial, utilizamos dos
+          melhores desenvolvedores de jogos da America Latina com a melhor setup
+          para poder fazer os melhores testes em jogos e poder aprova-los a
+          nossas plataformas, assim dando suporte total para desenvolvedores
+          menores que querem auxilio em seus jogos e disponibilizá-los no
+          mercado, de forma fácil e segura, fortalecendo assim uma grande
+          aliança.
+        </p>
+        <br />
+        <p class="paragrafoQuem">
+          Nossa equipe, incluindo os desenvolvedores e analistas, nos somos
+          especialistas em jogos e com um grande conhecimento no mercado de
+          jogos e plataformas online.
+        </p>
+        <br />
+        <p class="paragrafoQuem">
+          O nosso objetivo é oferecer uma gama de jogos no qual se teria
+          dificuldade de acesso, com qualidade e fácil acesso, sendo jogados em
+          qualquer dispositivo.
+        </p>
+      </div>
+    </div>
+    <!-- Rodapé ao fim da pagina -->
+    <footer>
+      <div id="footerContainer">
+        <div class="logo">
+          <img src="../assets/img/Logo.png" alt="Game Show Logo" />
+        </div>
+        <p id="footerP">
+          © 2023, Game Show, Inc. Todos os direitos reservados. Game Show, o
+          logotipo da Game Show, são marcas comerciais ou registradas da Game
+          Show, Inc. nos do Brasil e em outros lugares. Outras marcas e nomes de
+          produtos são marcas registradas de seus respectivos donos. Transações
+          para além da América Latina são realizadas através da Game Show
+          International, S.à r.l.
+        </p>
+      </div>
+    </footer>
+
+    <script src="../assets/js/menu.js"></script>
+  </body>
+</html>
