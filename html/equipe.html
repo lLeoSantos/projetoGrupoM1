@@ -21,18 +21,24 @@
                 <img src="assets/img/Logo.png" alt="Game Show" />        
             </div> <!-- Fechar logo da empresa -->
 
+            <div class="menuToggle">
+                <div class="containerToggle" onclick="mudaMenu()">
+                    <div id="primeiraBarra"></div>
+                    <div id="segundaBarra"></div>
+                    <div id="terceiraBarra"></div>
+                </div>
             <!-- Navegação da página -->
-            <nav>
-                <div id="menu">
-                    <ul>
-                        <li>Inicio</li>
-                        <li>Sobre</li>
-                        <li>Nossa Equipe</li> 
-                        <li>Contato</li>
-                    </ul>
-                </div> <!-- Fechar menu -->
-            </nav>
-
+                <nav>
+                    <div id="menu">
+                        <ul>
+                            <li><a href="./index.html">Inicio</a></li>
+                            <li><a href="./quemSomos.html">Sobre</a></li>
+                            <li><a href="./equipe.html">Nossa Equipe</a></li>
+                            <li><a href="./contato.html">Contato</a></li>
+                        </ul>
+                    </div> <!-- Fechar menu -->
+                </nav>
+            </div>
             <!-- Carrinho de compras -->
             <div id="carrinho">
                 <!-- icone do carrinho de compras -->
@@ -58,7 +64,7 @@
                 
 
                     <!-- chama função para abrir modal1 -->
-                <div>
+                <div class="teste">
                     <button data-abre-modal="#modal1" class="btnModal">
                         <section class="equipe-img">
                             <img src="assets/img/joao.jpeg" alt="">
@@ -68,7 +74,7 @@
 
 
                 
-                <div>
+                <div class="teste">
                     <button data-abre-modal="#modal2" class="img-abaixo">
                         <section class="equipe-img">
                             <img src="assets/img/leo.jfif" alt="">
@@ -79,7 +85,7 @@
 
 
 
-                <div>
+                <div class="teste">
                     <button data-abre-modal="#modal3" class="btnModal">
                         <section class="equipe-img">
                             <img src="assets/img/jonatas.png" alt="">
@@ -90,7 +96,7 @@
 
 
 
-                <div>
+                <div class="teste">
                     <button data-abre-modal="#modal4" class="img-abaixo">
                         <section class="equipe-img">
                             <img src="assets/img/thiago.jpg" alt="">
@@ -226,7 +232,8 @@
         </div>
     </footer>
 </div>
-<div id="mascara"></div>
+<!-- <div id="mascara"></div> -->
 <script src="assets/js/equipe.js"></script>
+<script src="./assets/js/menu.js"></script>
 </body>
 </html>
