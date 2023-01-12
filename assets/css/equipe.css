@@ -44,11 +44,11 @@
     background-size: 130%;
     
 }
-
+/*tamanho da div responsavel pelas imagens*/
 .equipe{
   width: 70%;
 }
-
+/*barra em baixo do titulo*/
 .equipe-titulo::after{
     content:"";
     padding: 2px;
@@ -58,7 +58,7 @@
     width: 20%;
     margin-top: 1rem;
 }
-
+/*titulo*/
 .equipe-titulo{
     text-align: center;
     font-family: roboto Condensed;
@@ -67,7 +67,7 @@
     font-size: 30px;
     margin-bottom: 3rem;
 }
-
+/*configurando modal e deixando ele "invisivel"*/
 .modal-container {
 
     background: rgba(0, 0, 0, 0.2);
@@ -98,7 +98,6 @@
       left: 30%;
       top: 50vh;
       background-color: #296CA6;
-      transform: translateY(-25%);
       padding: 1rem;
       box-shadow: 4px 4px 4px #0002;
       border-radius: 5px;
@@ -119,13 +118,14 @@
     top: 0;
     right: 0;
     bottom: 0;
-    background-color: black;
-    opacity: 0;
-    pointer-events: none;
+
+    
+    background-color: rgba(0, 0, 0,0.6);
+    z-index: 5;
   
   }
 /* para mascara ficar visivel */
-  .modal.visivel ~ #mascara {
+  .modal.visivel~#mascara {
     opacity: 1;
     pointer-events: initial;
   }
@@ -138,7 +138,7 @@
   .modal>.corpo-modal{
     padding: 1em 0;
   }
-
+/*botao fechar modal tamanho*/
   .fechar-modal {
     
     border-radius: 50%;
@@ -148,24 +148,24 @@
     align-items: center;
     cursor: pointer;
   }
-
+/*botao fechar do modal*/
   .fechar {
     display: flex;
     justify-content: end;
     width: 100%;
     height: 15%;
   }
-  
+/*tamanho do modal*/
   .modal-show  .modal {
     width: 350px;
     height: 250px;
   }
-  
+
   .modal-show {
     opacity: 1;
     pointer-events: auto;
   }
-
+/*alinhando imagem abaixo*/
   .img-abaixo{
     display: flex;
     margin-top: 140%;
@@ -173,13 +173,13 @@
     border: transparent;
   }
 
-
+/*botao das imagens da equipe*/
 .btnModal{
     background-color: transparent;
     border: transparent;
     
 }
-
+/*imagem dentro do modal*/
 .img-modal {
     width: 90px;
     height: 90px;
@@ -190,7 +190,7 @@
     
 
 }
-
+/*configuração dentro do modal*/
 .equipe-modal {
 align-items: center;
 
@@ -205,7 +205,7 @@ color: black;
 font-style: bold;
 
 }
-
+/*barra em baixo do nome no modal*/
 .equipe-modal::after{
   content:"";
   padding: 2px;
@@ -214,7 +214,7 @@ font-style: bold;
   width: 40%;
   margin-top: 2%;
 }
-
+/*texto modal*/
 .corpo-modal{
 
   width: 100%;
