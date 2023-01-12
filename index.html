@@ -1,141 +1,163 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="../assets/css/contato.css" />
-    <link rel="stylesheet" href="../assets/css/root.css" />
-    <link rel="icon" type="image/jpg" href="../assets/img/logo.png" type="image/png">
-    <link
-      rel="stylesheet"
-      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
-    />
-    <link
-      rel="stylesheet"
-      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
-    />
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/css/home.css">
+    <link rel="stylesheet" href="./assets/css/root.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="icon" type="image/jpg" href="./assets/img/logo.png" type="image/png">
+    <link rel="stylesheet" href="./assets/css/mediaHome.css">
+
+    <script src="https://kit.fontawesome.com/f804f86631.js" crossorigin="anonymous"></script>
     <title>GameShow</title>
-  </head>
-  <body>
+</head>
+<body>
     <header>
-      <!-- Container do mnenu -->
-      <div id="headerContainer">
-        <!-- Logo da Empresa -->
-        <div class="logo">
-          <img src="../assets/img/logo.png" alt="Game Show" />
-        </div>
-        <!-- Fechar logo da empresa -->
-        <div class="menuToggle">
-        <!-- Navegação da página -->
+        <!-- Container do mnenu -->
+        <div id="headerContainer">
+            <!-- Logo da Empresa -->
+            <div class="logo">
+                <img src="./assets/img/logo.png" alt="Game Show" />        
+            </div> <!-- Fechar logo da empresa -->
 
-          <!-- Botão de menu -->
-            <div class="containerToggle" onclick="mudaMenu()">
-                <div id="primeiraBarra"></div>
-                <div id="segundaBarra"></div>
-                <div id="terceiraBarra"></div>
+            <div class="menuToggle">
+                <div class="containerToggle" onclick="mudaMenu()">
+                    <div id="primeiraBarra"></div>
+                    <div id="segundaBarra"></div>
+                    <div id="terceiraBarra"></div>
+                </div>
+            <!-- Navegação da página -->
+                <nav>
+                    <div id="menu">
+                        <ul>
+                            <li><a href="./index.html">Inicio</a></li>
+                            <li><a href="./html/quemSomos.html">Sobre</a></li>
+                            <li><a href="./html/equipe.html">Nossa Equipe</a></li>
+                            <li><a href="./html/contato.html">Contato</a></li>
+                        </ul>
+                    </div> <!-- Fechar menu -->
+                </nav>
             </div>
-          <!-- Fechamento Botão de menu -->
-          <nav>
-            <div id="menu">
-              <ul>
-                <li><a href="../index.html">Inicio</a></li>
-                <li><a href="./quemSomos.html">Sobre</a></li>
-                <li><a href="./quemSomos.html">Nossa Equipe</a></li>
-                <li><a href="./contato.html">Contato</a></li>
-              </ul>
+            <!-- Carrinho de compras -->
+            <div id="carrinho">
+                <!-- icone do carrinho de compras -->
+                <span class="material-symbols-outlined">
+                    add_shopping_cart
+                </span>
             </div>
-            <!-- Fechar menu -->
-          </nav>
-        </div> <!-- Fechar menu Toggle-->
-
-        <!-- Carrinho de compras -->
-        <div id="carrinho">
-          <!-- icone do carrinho de compras -->
-          <span class="material-symbols-outlined"> add_shopping_cart </span>
-        </div>
-      </div>
-      <!-- Fechar headerContainer -->
-    </header>
-
-    <div id="conteudo">
-      <!-- Título da página -->
-      <h1>Fale Conosco</h1>
-
-      <div id="form">
-        <!-- Abertura da div para o Formulário -->
-        <form>
-          <!-- Abertura do Form -->
-            <!-- Texto de informação da página -->
-          <p>Faça sua requisição de entrada de jogo para a nossa loja, deixe sua sugestão ou reclamação ou tire suas dúvidas sobre a nossa plataforma.</p>
-
-          <div class="containerDoCampo">
-            <label for="nome"> Nome </label>
-            <input type="text" name="nome" id="nome" />
-          </div>
-          <!-- -->
-          <div class="containerDoCampo">
-            <label for="sobrenome"> Sobrenome </label>
-            <input type="text" name="sobrenome" id="sobrenome" />
-          </div>
-          <!-- -->
-          <div class="containerDoCampo">
-            <label for="email"> E-mail </label>
-            <input
-              type="email"
-              name="email"
-              id="email"
-              placeholder="exemplo@exemplo.com"
-              onblur="checarEmail()"
-            />
-          </div>
-          <!-- -->
-          <div class="containerDoCampo">
-            <label for="telefone"> Tel (Somente números) </label>
-            <input
-              type="tel"
-              name="telefone"
-              id="telefone"
-              maxlength="11"
-              placeholder="DDD 999999999"
-              onblur="somenteNumeros()"
-            />
-          </div>
-          <!-- -->
-          <div class="containerDoCampo">
-            <label for="mensagem" id="mensagemPlaceholder">
-              Escreva aqui
-            </label>
-            <textarea name="mensagem" id="mensagem" rows="10"></textarea>
-          </div>
-          <!-- -->
-          <div id="enviar">
-            <button type="button" onclick="verificarCampos()">Enviar</button>
-          </div>
-        </form>
-      </div>
-      <!-- Fechamento da div para o Formulário-->
-    </div>
-    <!-- Fechamento da div do Conteúdo -->
-
-    <footer>
-      <div id="footerContainer">
-        <div class="logo">
-          <img src="../assets/img/logo.png" alt="Game Show Logo" />
-        </div>
-        <p id="footerP">
-          © 2023, Game Show, Inc. Todos os direitos reservados. Game Show, o
-          logotipo da Game Show, são marcas comerciais ou registradas da Game
-          Show, Inc. nos do Brasil e em outros lugares. Outras marcas e nomes de
-          produtos são marcas registradas de seus respectivos donos. Transações
-          para além da América Latina são realizadas através da Game Show
-          International, S.à r.l.
-        </p>
-      </div>
-    </footer>
+        </div> <!-- Fechar headerContainer -->
+    </header> 
     
-    <!-- Scripts -->
-    <script src="../assets/js/contato.js"></script>
-    <script src="../assets/js/menu.js"></script>
-  </body>
+    <!-- Container para todo conteudo da pagina -->
+<main id="meio">
+
+    <!-- Janela de busca  -->
+    <section id="busca">
+        <div id="pesquisa">
+            <input type="text" class="search-text" placeholder="Pesquisar... ">
+            <button id="btPesquisa"><i class="fa-solid fa-magnifying-glass"></i></button>
+        </div>
+    </section>
+
+    <!-- Itens da loja  -->
+    <section id="cards">
+
+        
+        <!-- Espaço para o carrossel  -->
+        <div id="carrossel">
+            <div class="containerCarrossel">
+                <input type="radio" name="slide" id="slide1" checked>
+                <input type="radio" name="slide" id="slide2">
+                <input type="radio" name="slide" id="slide3">
+                <input type="radio" name="slide" id="slide4">
+
+                <!-- coloquei cada img em uma div para melhor manuseio  -->
+                <div class="slide on">
+                    <img src="./assets/img/nbaw2k23Carrossel.png" alt="">
+                </div>
+                <div class="slide">
+                    <img src="./assets/img/scratchPotterCarrossel.png" alt="">
+                </div>
+                <div class="slide">
+                    <img src="./assets/img/soccerwomanCarrossel.png" alt="">
+                </div>
+                <div class="slide">
+                    <img src="./assets/img/trunkscratchCarrossel.png" alt="">
+                </div>
+            </div>
+
+        </div>
+
+
+        <!-- Aqui estou fazendo um link entre o label e os input da linha 65 a 68 -->
+        <div class="navegacao">
+            <label class="btNav" for="slide1"></label>
+            <label class="btNav" for="slide2"></label>
+            <label class="btNav" for="slide3"></label>
+            <label class="btNav" for="slide4"></label>
+        </div>
+
+        <!-- A loja  -->
+        <div id="containerLoja">
+            <div id="titleLoja"><h1>JOGOS EM DESTAQUE</h1></div>
+            <div class="loja">
+                <div class="itensLoja">
+                    <h3>Pega Cipo</h3>
+                    <img src="./assets/img/pegaCipo.png" alt="Pega cipo">
+                </div>
+                <div class="itensLoja">
+                    <h3>Castel Dragon</h3>
+                    <img src="./assets/img/casteldragon.png" alt="Castel Dragon">
+                </div>
+                <div class="itensLoja">
+                    <h3>NBAW 2k23</h3>
+                    <img src="./assets/img/nbaw2k23.png" alt="NBAW 2k23">
+                </div>
+                <div class="itensLoja">
+                    <h3>Scratch Potter</h3>
+                    <img src="./assets/img/scratchPotter.png" alt="Scratch Potter">
+                </div>
+                <div class="itensLoja">
+                    <h3>Soccer Woman</h3>
+                    <img src="./assets/img/soccerwoman.png" alt="Soccer Woman">
+                </div>
+                <div class="itensLoja">
+                    <h3>Space Combat</h3>
+                    <img src="./assets/img/spaceCombat.png" alt="Space Combat">
+                </div>
+                <div class="itensLoja">
+                    <h3>Space with Dog</h3>
+                    <img src="./assets/img/spaceindog.png" alt="Space in dog">
+                </div>
+                <div class="itensLoja">
+                    <h3>The Scratch</h3>
+                    <img src="./assets/img/theScratch.png" alt="The Scratch">
+                </div>
+                <div class="itensLoja">
+                    <h3>Trunks Scratch</h3>
+                    <img src="./assets/img/trunkscratch.png" alt="Trunk Scratch">
+                </div>
+            </div>
+        </div>
+    </section>
+</main>
+
+<!-- Nosso rodapé -->
+<footer>
+    <div id="footerContainer">
+        <div class="logo">
+            <img src="./assets/img/logo.png" alt="Game Show Logo">
+        </div>
+       <p id="footerP">© 2023, Game Show, Inc. Todos os direitos reservados. Game Show, o logotipo da Game Show,  
+        são marcas comerciais ou registradas da Game Show, Inc. nos do Brasil e em outros lugares. Outras marcas e 
+        nomes de produtos são marcas registradas de seus respectivos donos. Transações para além da América Latina 
+        são realizadas através da Game Show International, S.à r.l.</p>
+    </div>
+</footer>
+
+<script src="./assets/js/menu.js"></script>
+<script src="./assets/js/carrossel.js"></script>
+</body>
 </html>
