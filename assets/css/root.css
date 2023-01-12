@@ -70,15 +70,8 @@ nav{
 
 #menu{
     display: flex;
-    width: 70%;
-    justify-content: center;
-}
-
-#menu{
-    display: flex;
-    flex-flow: row nowrap;
-    justify-content: Center;
     width: 100%;
+    justify-content: center;
 }
 
 #openMenu{
