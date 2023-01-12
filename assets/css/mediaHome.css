@@ -7,24 +7,28 @@
         width: 70%;
     }
 }
+/* Ajuste de tamanho maximo e minimo da loja  */
 @media (max-width: 1018px) {
+
     .loja{
         grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
     }
 }
+/* Ajuste no tamanho da barra de pesquisa  */
 @media (max-width: 710px) {
     #pesquisa{
         width: 20rem;
     }
 }
+
+/* Reduzindo a fonte de toda a pagina  */
 @media (max-width: 673px) {
     html{
         font-size: 50%;
     }
-    #pesquisa {
-        width: 20rem;
-    }
 }
+
+/* Ajuste de fonte, tamanho do carrossel e barra de pesquisa */
 @media (max-width: 550px) {
     html{
         font-size: 40%;
@@ -36,6 +40,8 @@
         font-size: 1.2rem;
     }
 }
+
+/* Ajsute de fonte e barra de pesquisa */
 @media (max-width: 430px) {
     html{
         font-size: 35%;
@@ -43,53 +49,6 @@
     #pesquisa{
         width: 11rem;
     }
-    /* Config teste para o menu  */
-    /* nav {
-        display: none;
-    }
-
-    #home, #sobre, #equipe{
-        background: #fff;
-        width: 100%;
-        height: 3px;
-        margin: 5px auto;
-    }
-    .containerToggle{
-        width: 30px;
-        height: 25px;
-        
-    }
-    .menuToggle.on{
-        position: absolute;
-        top: 0;
-        background: linear-gradient(0deg, rgba(11,18,38,1) 42%, rgba(23,23,94,1) 100%);
-        width: 100vw;
-        height: 100vh;
-
-        z-index: 7;
-
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
-    .menuToggle.on nav{
-        display: block;
-    }
-    .menuToggle.on .containerToggle{
-        position: absolute;
-        top: 10px;
-        margin-right: 10px;
-    }
-    .menuToggle.on nav ul{
-        display: block;
-        text-align: center;
-    }
-    .menuToggle.on nav ul li{
-        transition-duration: 0.5s;
-        font-size: 4rem;
-        line-height: 8rem;
-        font-family: 'Poppins', sans-serif;
-    } */
 }
 @media (max-width: 380px) {
     html{

@@ -25,23 +25,28 @@
           <img src="assets/img/Logo.png" alt="Game Show" />
         </div>
         <!-- Fechar logo da empresa -->
-
+        <div class="menuToggle">
         <!-- Navegação da página -->
-        <nav>
-          <div id="menu">
-            <!-- Botão de menu -->
-            <div id="botaoMenu" class="material-symbols-outlined">menu</div>
-            <!-- Fechamento Botão de menu -->
 
-            <ul id="openMenu">
-              <li>Inicio</li>
-              <li>Sobre</li>
-              <li>Nossa Equipe</li>
-              <li>Contato</li>
-            </ul>
-          </div>
-          <!-- Fechar menu -->
-        </nav>
+          <!-- Botão de menu -->
+            <div class="containerToggle" onclick="mudaMenu()">
+                <div id="primeiraBarra"></div>
+                <div id="segundaBarra"></div>
+                <div id="terceiraBarra"></div>
+            </div>
+          <!-- Fechamento Botão de menu -->
+          <nav>
+            <div id="menu">
+              <ul>
+                <li><a href="./index.html">Inicio</a></li>
+                <li>Sobre</li>
+                <li>Nossa Equipe</li>
+                <li><a href="./contato.html">Contato</a></li>
+              </ul>
+            </div>
+            <!-- Fechar menu -->
+          </nav>
+        </div> <!-- Fechar menu Toggle-->
 
         <!-- Carrinho de compras -->
         <div id="carrinho">
@@ -102,7 +107,7 @@
           </div>
           <!-- -->
           <div id="enviar">
-            <button type="submit">Enviar</button>
+            <button type="submit" onclick="verificarCampos()">Enviar</button>
           </div>
         </form>
       </div>
@@ -125,5 +130,9 @@
         </p>
       </div>
     </footer>
+    
+    <!-- Scripts -->
+    <script src="assets/js/contato.js"></script>
+    <script src="assets/js/menu.js"></script>
   </body>
 </html>
