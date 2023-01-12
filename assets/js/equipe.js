@@ -1,26 +1,34 @@
 const botoes = document.querySelectorAll('[data-abre-modal]')
-for (let botaoE1 of botoes){
-	botaoE1.addEventListener('click', abreModal);
+const mascara = document.querySelector('#mascara')
+//loop responsavel por adicionar botao do vetor na variavel
+for (let botaoEl of botoes){
+	botaoEl.addEventListener('click', abreModal);
 }
-
+//manipulador de eventos
 function abreModal(e) {
-	const botaoClicadoE1 = e.currentTarget;
-	const seletorDoModal = botaoClicadoE1.dataset.abreModal;
-	const modalE1 = document.querySelector(seletorDoModal);
-	modalE1.classList.add('visivel');
+	//identifica o alvo do evento
+	const botaoClicadoEl = e.currentTarget;
+	//seta o valor do botao clicado
+	const seletorDoModal = botaoClicadoEl.dataset.abreModal;
+	//recebe o modal certo
+	const modalEl = document.querySelector(seletorDoModal);
+	//adiciona a classe visivel
+	modalEl.classList.add('visivel');
+	
 }
-
+//forEach executa a função em todos os elementos
 const botoesDeFechar = document.querySelectorAll('.fechar-modal');
 botoesDeFechar.forEach(fechaE1 => fechaE1.addEventListener('click',fechaModal));
 
 function fechaModal(e) {
+
 	const fecharModalE1 = e.currentTarget;
-	const modalE1 = fecharModalE1.closest('.modal');
-	modalE1.classList.remove('visivel');
+	const modalEl = fecharModalE1.closest('.modal');
+	modalEl.classList.remove('visivel');
 }
 
-const mascaraE1 = document.querySelector('#mascara');
-mascaraE1.addEventListener('click', fechaModalAberto);
+const mascaraEl = document.querySelector('mascara');
+mascaraEl.addEventListener('click', fechaModal);
 
 function fechaModalAberto() {
 	document.querySelector('modal.visivel').classList.remove('visivel');
