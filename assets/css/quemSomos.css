@@ -5,6 +5,7 @@
 
 @import url(https://fonts.googleapis.com/css2?family=Poppins&display=swap%27);
 
+/* Ajuste tamanho da imagem em tela (Tambem para ficar responsivo)*/
 html,
 body {
   font-size: 100%;
@@ -18,7 +19,7 @@ body {
   font-weight: 500;
   line-height: 1.1;
 }
-
+/* Ajustes no texto, para ficar padrão na pagina */
 p {
   margin-bottom: 0.3rem;
   font-size: 20px;
@@ -42,7 +43,7 @@ h5 {
   width: 100%; /*tamanho da largula de forma responsiva*/
   height: 100%;
 }
-
+/* Div da foto funcionarios */
 .funcionarios {
   display: block;
   width: 40%;
@@ -52,7 +53,7 @@ h5 {
   margin-left: 29%;
   margin-top: 5%;
 }
-
+/* Efeito na foto ao passar o mouse */
 .funcionarios img {
   transition: all 0.5s;
   cursor: pointer;
@@ -64,7 +65,7 @@ h5 {
   box-shadow: 0 0 3rem #115086, inset 0 0 2rem #115086, 0 0 4rem #115086,
     inset 0 0 2rem #115086;
 }
-
+/* Ajuste na caixa onde ficará o texto */
 #quemSomos {
   display: block;
   width: 80%;
@@ -77,7 +78,7 @@ h5 {
   margin-bottom: 1%;
   border-radius: 28px;
 }
-
+/* Ajuste no texto dentro da caixa */
 .paragrafoQuem {
   text-align: left;
   color: #05f258;
@@ -93,6 +94,7 @@ footer {
 
 /* Media Querry - Responsividade */
 
+/* Pagina no geral e caixas de texto */
 @media (max-width: 1500px) {
   #quemSomos {
     margin-top: 2%;
@@ -124,7 +126,7 @@ footer {
   }
 }
 
-/* Menu responsividade */
+/* Menu responsividade, cabeçalho */
 
 @media (max-width: 673px) {
   html {
@@ -173,7 +175,7 @@ footer {
   nav {
     display: none;
   }
-
+  /* Menu home */
   #home,
   #sobre,
   #equipe {
