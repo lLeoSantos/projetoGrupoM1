@@ -36,8 +36,9 @@ h5 {
   line-height: 1.3;
 }
 
-.meio {
+#meio {
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   width: 100%; /*tamanho da largula de forma responsiva*/
@@ -45,18 +46,17 @@ h5 {
 }
 /* Div da foto funcionarios */
 .funcionarios {
-  display: block;
-  width: 40%;
+  display: flex;
+  max-width: 800px;
   height: auto;
   justify-items: center;
   justify-content: center;
-  margin-left: 29%;
+  /* margin-left: 29%; */
   margin-top: 5%;
 }
 /* Efeito na foto ao passar o mouse */
 .funcionarios img {
   transition: all 0.5s;
-  cursor: pointer;
 }
 
 .funcionarios img:hover {
