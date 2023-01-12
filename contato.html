@@ -85,17 +85,19 @@
               name="email"
               id="email"
               placeholder="exemplo@exemplo.com"
+              onblur="checarEmail()"
             />
           </div>
           <!-- -->
           <div class="containerDoCampo">
-            <label for="telefone"> Tel </label>
+            <label for="telefone"> Tel (Somente números) </label>
             <input
               type="tel"
               name="telefone"
               id="telefone"
               maxlength="11"
               placeholder="DDD 999999999"
+              onblur="somenteNumeros()"
             />
           </div>
           <!-- -->
@@ -107,7 +109,7 @@
           </div>
           <!-- -->
           <div id="enviar">
-            <button type="submit" onclick="verificarCampos()">Enviar</button>
+            <button type="button" onclick="verificarCampos()">Enviar</button>
           </div>
         </form>
       </div>
