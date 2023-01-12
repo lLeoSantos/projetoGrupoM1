@@ -1,9 +1,8 @@
 let cont = 1
 const slide = document.querySelectorAll('.containerCarrossel img')
-console.log(slide);
 setInterval(function(){
 
-    document.getElementById('slide' + cont).checked = true
+    document.querySelector('#slide' + cont).checked = true
 
     cont++
 
