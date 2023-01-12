@@ -20,11 +20,11 @@
                 <img src="assets/img/Logo.png" alt="Game Show" />        
             </div> <!-- Fechar logo da empresa -->
 
-            <div class="menuToggle" onclick="mudaMenu()">
-                <div class="containerToggle">
-                    <div id="home"></div>
-                    <div id="sobre"></div>
-                    <div id="equipe"></div>
+            <div class="menuToggle">
+                <div class="containerToggle" onclick="mudaMenu()">
+                    <div id="primeiraBarra"></div>
+                    <div id="segundaBarra"></div>
+                    <div id="terceiraBarra"></div>
                 </div>
             <!-- Navegação da página -->
                 <nav>
@@ -50,6 +50,7 @@
     
     <!-- Container para todo conteudo da pagina -->
 <main id="meio">
+
     <!-- Janela de busca  -->
     <section id="busca">
         <div id="pesquisa">
@@ -57,8 +58,11 @@
             <button id="btPesquisa"><i class="fa-solid fa-magnifying-glass"></i></button>
         </div>
     </section>
+
     <!-- Itens da loja  -->
     <section id="cards">
+
+        
         <!-- Espaço para o carrossel  -->
         <div id="carrossel">
             <div class="containerCarrossel">
@@ -67,21 +71,25 @@
                 <input type="radio" name="slide" id="slide3">
                 <input type="radio" name="slide" id="slide4">
 
+                <!-- coloquei cada img em uma div para melhor manuseio  -->
                 <div class="slide on">
-                    <img src="https://images.unsplash.com/photo-1667256059621-9583d2010b73?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHx0b3BpYy1mZWVkfDl8eEh4WVRNSExnT2N8fGVufDB8fHx8&auto=format&fit=crop&w=600&q=60" alt="">
+                    <img src="./assets/img/nbaw2k23.png" alt="">
                 </div>
                 <div class="slide">
-                    <img src="https://images.unsplash.com/photo-1656041968624-4a471e61016d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHx0b3BpYy1mZWVkfDd8eEh4WVRNSExnT2N8fGVufDB8fHx8&auto=format&fit=crop&w=600&q=60" alt="">
+                    <img src="./assets/img/scratchPotter.png" alt="">
                 </div>
                 <div class="slide">
-                    <img src="https://images.unsplash.com/photo-1669751552853-6e1268cf98e8?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHx0b3BpYy1mZWVkfDEwfHhIeFlUTUhMZ09jfHxlbnwwfHx8fA%3D%3D&auto=format&fit=crop&w=600&q=60" alt="">
+                    <img src="./assets/img/soccerwoman.png" alt="">
                 </div>
                 <div class="slide">
-                    <img src="https://images.unsplash.com/photo-1671474087718-8bb4f50658aa?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHx0b3BpYy1mZWVkfDE1fHhIeFlUTUhMZ09jfHxlbnwwfHx8fA%3D%3D&auto=format&fit=crop&w=600&q=60" alt="">
+                    <img src="./assets/img/casteldragon.png" alt="">
                 </div>
             </div>
 
         </div>
+
+
+        <!-- Aqui estou fazendo um link entre o label e os input da linha 65 a 68 -->
         <div class="navegacao">
             <label class="btNav" for="slide1"></label>
             <label class="btNav" for="slide2"></label>
@@ -94,18 +102,20 @@
             <div id="titleLoja"><h1>JOGOS EM DESTAQUE</h1></div>
             <div class="loja">
                 <div class="itensLoja"><img src="./assets/img/pegaCipo.png" alt="Pega cipo"></div>
-                <div class="itensLoja"><img src="./assets/img/pegaCipo.png" alt="Pega cipo"></div>
-                <div class="itensLoja"><img src="./assets/img/pegaCipo.png" alt="Pega cipo"></div>
-                <div class="itensLoja"><img src="./assets/img/pegaCipo.png" alt="Pega cipo"></div>
-                <div class="itensLoja"><img src="./assets/img/pegaCipo.png" alt="Pega cipo"></div>
-                <div class="itensLoja"><img src="./assets/img/pegaCipo.png" alt="Pega cipo"></div>
-                <div class="itensLoja"><img src="./assets/img/pegaCipo.png" alt="Pega cipo"></div>
-                <div class="itensLoja"><img src="./assets/img/pegaCipo.png" alt="Pega cipo"></div>
-                <div class="itensLoja"><img src="./assets/img/pegaCipo.png" alt="Pega cipo"></div>
+                <div class="itensLoja"><img src="./assets/img/casteldragon.png" alt="Castel Dragon"></div>
+                <div class="itensLoja"><img src="./assets/img/nbaw2k23.png" alt="NBAW 2k23"></div>
+                <div class="itensLoja"><img src="./assets/img/scratchPotter.png" alt="Scratch Potter"></div>
+                <div class="itensLoja"><img src="./assets/img/soccerwoman.png" alt="Soccer Woman"></div>
+                <div class="itensLoja"><img src="./assets/img/spaceCombat.png" alt="Space Combat"></div>
+                <div class="itensLoja"><img src="./assets/img/spaceindog.png" alt="Space in dog"></div>
+                <div class="itensLoja"><img src="./assets/img/theScratch.png" alt="The Scratch"></div>
+                <div class="itensLoja"><img src="./assets/img/trunkscratch.png" alt="Trunk Scratch"></div>
             </div>
         </div>
     </section>
 </main>
+
+<!-- Nosso rodapé -->
 <footer>
     <div id="footerContainer">
         <div class="logo">

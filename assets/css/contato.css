@@ -5,9 +5,9 @@
 p, label, input {
     font-size: 1.5rem;
     font-family: 'Poppins', monospace;
-    color: #10731f;
-    text-shadow: 1px 1px 1px #f2f2f2,
-                -0.2px -0.2px #f2f2f2;
+    color: black;
+    /* text-shadow: 1px 1px 1px #f2f2f2,
+                -0.2px -0.2px #f2f2f2; */
 }
 
 body {
@@ -29,6 +29,7 @@ h1 {
     flex-direction: column;
     align-items: center;
     padding: 0 25%;
+    
 }
 
 /* Display do Formulário - Como o formulário será mostrado */
@@ -39,6 +40,8 @@ h1 {
     padding: 3rem;
     background: #296ca6;
     border-radius: 3rem;
+    box-shadow: 2px 2px 4px #000;
+    margin-bottom: 15px;
 }
 
 /* Como será mostrado cada campo do formulário */
@@ -49,6 +52,7 @@ h1 {
     align-items: center;
     flex-basis: 50%;
     margin: 1rem 0;
+    
 
 }
 
@@ -93,26 +97,6 @@ h1 {
     background: #0b3d13!important;
     transition: none;
 }
-
-/* Para talvez incluir na ROOT */
-#headerContainer {
-    background-color: #0d0d0d!important;
-}
-
-#menu li {
-    color: #53f289;
-    text-shadow: 2px 2px 5px #f2f2f2;
-}
-
-#footerContainer {
-    background-color: #0d0d0d!important;
-}
-
-#footerP {
-    color: #53f289;
-    text-shadow: none;
-}
-
 
 /* Responsividade para Tablets (1104px) */
     /* Conteúdo da página */
