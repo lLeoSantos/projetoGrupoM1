@@ -24,7 +24,8 @@ h1 {
 
 /* Conteúdo da página */
 #conteudo {
-    /* flex-grow: 1; */
+    width: 100%;
+    height: 100%;
     display: flex;
     flex-direction: column;
     justify-content: center;
