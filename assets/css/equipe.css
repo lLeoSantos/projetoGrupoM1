@@ -64,7 +64,7 @@
     font-family: roboto Condensed;
     color: #fff;
     text-transform: uppercase;
-    font-size: 30px;
+    font-size: 3.0rem;
     margin-bottom: 3rem;
 }
 /*configurando modal e deixando ele "invisivel"*/
@@ -200,7 +200,7 @@ height: 50%;
 display: flex;
 flex-direction: column;
 text-align: center;
-font-size: 14px;
+font-size: 1.4rem;
 font-family: roboto Condensed;
 color: black;
 font-style: bold;
@@ -220,7 +220,7 @@ font-style: bold;
 
   width: 100%;
   text-align: center;
-  font-size: 12px;
+  font-size: 1.2rem;
   font-family: roboto Condensed;
 
 }
